@@ -1,0 +1,171 @@
+<script src="{{ 'labsens-header.js' | asset_url }}" defer></script>
+<labsens-header id="header-component" class="labsens-global labsens-header">
+  {% if section.settings.announcement != blank %}<div class="labsens-header__announcement">{{ section.settings.announcement | escape }}</div>{% endif %}
+  <div class="labsens-header__main">
+    <a class="labsens-header__logo" href="{{ routes.root_url }}" aria-label="{{ shop.name | escape }} — Inicio">
+      {% if section.settings.logo != blank %}{{ section.settings.logo | image_url: width: 600 | image_tag: widths: '200, 300, 600', loading: 'eager', alt: shop.name }}{% else %}<img src="{{ 'labsens-logo-horizontal.svg' | asset_url }}" width="234" height="47" alt="LabSens — Experiencia sensorial" fetchpriority="high">{% endif %}
+    </a>
+    <form class="labsens-header__search" action="{{ routes.search_url }}" method="get" role="search">
+      <button type="submit" aria-label="Buscar">{{ 'icon-search.svg' | inline_asset_content }}</button>
+      <label for="LabsensSearch-{{ section.id }}" class="visually-hidden">Buscar</label><input id="LabsensSearch-{{ section.id }}" type="search" name="q" placeholder="Buscar" value="{{ search.terms | escape }}">
+    </form>
+    {% if section.settings.contact_url != blank %}<a class="labsens-header__contact" href="{{ section.settings.contact_url }}">{{ section.settings.contact_label | escape }}</a>{% endif %}
+    <div class="labsens-header__cart">{% render 'header-actions', display_style: 'icon', cart_icon_asset: 'labsens-basket.svg' %}</div>
+    <button class="labsens-header__toggle" type="button" aria-expanded="false" aria-controls="LabsensNav-{{ section.id }}" aria-label="Abrir menú"><span aria-hidden="true">☰</span></button>
+  </div>
+  <nav id="LabsensNav-{{ section.id }}" class="labsens-nav" aria-label="Navegación principal">{% render 'labsens-navigation', section: section %}</nav>
+</labsens-header>
+{% stylesheet %}
+  .labsens-header{display:block;background:var(--labsens-paper)}
+  .labsens-header__announcement{height:38px;display:flex;align-items:center;justify-content:center;background:var(--labsens-peach);font-size:18px;font-weight:600;line-height:1;text-align:center}
+  .labsens-header__main{display:grid;grid-template-columns:234px 1fr minmax(180px,420px) auto 28px;align-items:center;gap:20px;padding:20px;min-height:88px;border-bottom:1px solid var(--labsens-ink)}
+  .labsens-header__logo{grid-column:1;display:block}
+  .labsens-header__logo img{display:block;width:234px;height:auto;max-width:100%}
+  .labsens-header__search{grid-column:3;display:flex;align-items:center;height:28px;border:1px solid var(--labsens-ink);border-radius:999px;background:#fff;overflow:hidden}
+  .labsens-header__search button{display:flex;align-items:center;justify-content:center;border:0;background:transparent;padding:0 8px;color:var(--labsens-ink);height:100%;cursor:pointer}
+  .labsens-header__search svg{width:16px;height:16px}
+  .labsens-header__search input{width:100%;min-width:0;border:0;background:transparent;box-shadow:none;padding:0 8px 0 0;font:inherit;font-size:14px;height:100%;color:inherit}
+  .labsens-header__search:focus-within{outline:2px solid var(--labsens-ink);outline-offset:2px}
+  .labsens-header__search input:focus-visible{outline:none}
+  .labsens-header__contact{font-size:16px;white-space:nowrap}
+  .labsens-header__cart header-actions{gap:0}
+  .labsens-header__cart .account-button{display:none}
+  .labsens-header__cart .header-actions__action{min-width:28px;width:28px;min-height:28px;height:28px;padding:0;overflow:visible}
+  .labsens-header__cart .cart-bubble{background:var(--cart-bubble-background);color:var(--cart-bubble-text)}
+  .labsens-header__cart{--cart-bubble-background:var(--labsens-peach);--cart-bubble-text:#fff}
+  .labsens-header__cart .header-actions__cart-icon{--cart-bubble-size:16px;--cart-bubble-top:-8px;--cart-bubble-right:-5px}
+  .labsens-header__cart .svg-wrapper svg{fill:currentColor}
+  .labsens-header__cart .cart-bubble.visually-hidden{position:absolute!important;clip:auto!important;clip-path:none!important;width:16px!important;height:16px!important;margin:0!important;overflow:visible!important;white-space:normal!important}
+  .labsens-header__cart .cart-bubble__text-count.hidden{display:block!important}
+  .labsens-header__toggle{display:none}
+  .labsens-nav{border-bottom:1px solid var(--labsens-ink);background:var(--labsens-paper)}
+  .labsens-nav__list{display:flex;align-items:center;justify-content:center;gap:38px;list-style:none;margin:0;padding:0 20px;min-height:46px;font-size:16px}
+  .labsens-nav li{list-style:none}
+  .labsens-nav__list>li>a,.labsens-nav__list>li>span,.labsens-nav summary{display:block;padding:10px 0;line-height:26px}
+  .labsens-nav summary{cursor:pointer;list-style:none;display:flex;gap:12px;align-items:center}
+  .labsens-nav summary svg{width:10px;height:14px;fill:currentColor}
+  .labsens-nav summary::-webkit-details-marker{display:none}
+  .labsens-nav__dropdown{position:relative}
+  .labsens-nav__dropdown>ul{position:absolute;top:100%;left:-12px;min-width:245px;background:var(--labsens-paper);border:1px solid var(--labsens-ink);padding:10px 14px;margin:0;z-index:25}
+  .labsens-nav__list>li:nth-last-child(-n+2) .labsens-nav__dropdown>ul{left:auto;right:0}
+  .labsens-nav__dropdown ul a{display:block;padding:7px 0;line-height:1.4}
+  .labsens-nav__dropdown ul ul{padding-left:15px}
+  .labsens-header--stuck .labsens-nav{position:fixed;top:0;left:0;right:0;z-index:25}
+  .labsens-header--stuck{padding-bottom:var(--labsens-nav-height,47px)}
+  @media(min-width:768px) and (max-width:1100px){.labsens-nav__list{gap:0 20px;font-size:14px;flex-wrap:wrap}.labsens-header__main{grid-template-columns:234px 1fr minmax(160px,340px) auto 28px;gap:12px}}
+  @media(max-width:767px){
+    .labsens-header__announcement{display:none}
+    .labsens-header__main{grid-template-columns:minmax(0,1fr) 40px 40px;grid-template-rows:46px 50px;gap:0 10px;padding:0 5px;border:0;position:relative}
+    .labsens-header__main:before{content:'';position:absolute;left:0;right:0;top:45px;border-bottom:1px solid var(--labsens-ink)}
+    .labsens-header__logo{grid-column:1/3;grid-row:1}
+    .labsens-header__logo img{width:195px}
+    .labsens-header__contact{grid-row:1;grid-column:2/4;justify-self:end;font-size:16px}
+    .labsens-header__search{grid-row:2;grid-column:1;height:26px}
+    .labsens-header__cart{grid-row:2;grid-column:2;background:var(--labsens-peach);display:flex;justify-content:center;align-items:center;height:36px}
+    .labsens-header__cart .header-actions__action{width:36px;height:36px}
+    .labsens-header__toggle{display:block;grid-row:2;grid-column:3;width:36px;height:36px;border:0;background:var(--labsens-peach);color:var(--labsens-ink);font-size:26px;line-height:1;cursor:pointer}
+    .labsens-nav__list{display:block;padding:10px 20px}
+    .labsens-header[data-enhanced] .labsens-nav{display:none}
+    .labsens-header[data-enhanced][data-menu-open] .labsens-nav{display:block;max-height:calc(100dvh - 96px);overflow:auto}
+    .labsens-nav__list>li{border-bottom:1px solid rgb(49 49 49 / 15%)}
+    .labsens-nav__dropdown>ul{position:static;min-width:0;border:0;padding:0 0 10px 15px}
+    .labsens-nav summary{justify-content:space-between}
+    .labsens-header--stuck{padding-bottom:0}
+    .labsens-header--stuck .labsens-nav{position:static}
+    .labsens-header__cart{--cart-bubble-background:var(--labsens-ink)}
+    .labsens-header--mobile-stuck{padding-top:96px}
+    .labsens-header--mobile-stuck .labsens-header__main{position:fixed;top:-46px;left:0;right:0;z-index:25;background:var(--labsens-paper)}
+    .labsens-header--mobile-stuck[data-menu-open] .labsens-nav{position:fixed;top:50px;left:0;right:0;z-index:25;max-height:calc(100dvh - 50px)}
+  }
+{% endstylesheet %}
+
+{% schema %}
+{
+  "name": "Labsens · Header",
+  "tag": "header",
+  "class": "header-section labsens-header-section",
+  "enabled_on": {
+    "groups": [
+      "header"
+    ]
+  },
+  "settings": [
+    {
+      "type": "text",
+      "id": "announcement",
+      "label": "Anuncio",
+      "default": "Hacemos envíos a todo el país"
+    },
+    {
+      "type": "image_picker",
+      "id": "logo",
+      "label": "Logo horizontal"
+    },
+    {
+      "type": "text",
+      "id": "contact_label",
+      "label": "Texto de contacto",
+      "default": "Contacto"
+    },
+    {
+      "type": "url",
+      "id": "contact_url",
+      "label": "Enlace de contacto"
+    },
+    {
+      "type": "link_list",
+      "id": "menu",
+      "label": "Menú de Shopify"
+    },
+    {
+      "type": "paragraph",
+      "content": "Sin menú seleccionado se muestran los bloques de enlaces. Los destinos originales se conservarán hasta migrar el catálogo."
+    }
+  ],
+  "blocks": [
+    {
+      "type": "link",
+      "name": "Enlace",
+      "settings": [
+        {
+          "type": "text",
+          "id": "label",
+          "label": "Texto",
+          "default": "Enlace"
+        },
+        {
+          "type": "url",
+          "id": "url",
+          "label": "Destino"
+        },
+        {
+          "type": "text",
+          "id": "child_label_1",
+          "label": "Subenlace 1"
+        },
+        {
+          "type": "url",
+          "id": "child_url_1",
+          "label": "Destino 1"
+        },
+        {
+          "type": "text",
+          "id": "child_label_2",
+          "label": "Subenlace 2"
+        },
+        {
+          "type": "url",
+          "id": "child_url_2",
+          "label": "Destino 2"
+        }
+      ]
+    }
+  ],
+  "max_blocks": 15,
+  "presets": [
+    {
+      "name": "Labsens · Header"
+    }
+  ]
+}
+{% endschema %}

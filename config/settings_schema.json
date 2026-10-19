@@ -241,6 +241,10 @@
             "label": "48px"
           },
           {
+            "value": "50",
+            "label": "50px"
+          },
+          {
             "value": "56",
             "label": "56px"
           },
@@ -375,6 +379,10 @@
           {
             "value": "24",
             "label": "24px"
+          },
+          {
+            "value": "30",
+            "label": "30px"
           },
           {
             "value": "32",
@@ -527,6 +535,10 @@
           {
             "value": "20",
             "label": "20px"
+          },
+          {
+            "value": "21",
+            "label": "21px"
           },
           {
             "value": "24",
@@ -2114,6 +2126,21 @@
           }
         ],
         "default": "equal-width-buttons"
+      }
+    ]
+  },
+  {
+    "name": "Labsens · Identidad",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "labsens_brand_font",
+        "label": "Usar tipografía original Syne",
+        "default": true
+      },
+      {
+        "type": "paragraph",
+        "content": "La paleta se edita en Colores. Al desactivar Syne, se utilizan las fuentes elegidas en Tipografía."
       }
     ]
   }

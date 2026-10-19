@@ -1,0 +1,46 @@
+{% doc %}
+  Renders native Shopify navigation or the section's configurable fallback links.
+  @param {object} section - Header section with menu and link blocks.
+{% enddoc %}
+<ul class="labsens-nav__list">
+  {% if section.settings.menu != blank %}
+    {% for link in section.settings.menu.links %}
+      <li>
+        {% if link.links != blank %}
+          <details class="labsens-nav__dropdown">
+            <summary>{{ link.title | escape }} <span aria-hidden="true">{{ 'labsens-chevron.svg' | inline_asset_content }}</span></summary>
+            <ul>
+              <li><a href="{{ link.url }}">{{ link.title | escape }}</a></li>
+              {% for child in link.links %}
+                <li><a href="{{ child.url }}" {% if child.current %}aria-current="page"{% endif %}>{{ child.title | escape }}</a>
+                  {% if child.links != blank %}<ul>{% for grandchild in child.links %}<li><a href="{{ grandchild.url }}">{{ grandchild.title | escape }}</a></li>{% endfor %}</ul>{% endif %}
+                </li>
+              {% endfor %}
+            </ul>
+          </details>
+        {% else %}
+          <a href="{{ link.url }}" {% if link.current %}aria-current="page"{% endif %}>{{ link.title | escape }}</a>
+        {% endif %}
+      </li>
+    {% endfor %}
+  {% else %}
+    {% for block in section.blocks %}
+      <li {{ block.shopify_attributes }}>
+        {% if block.settings.child_label_1 != blank or block.settings.child_label_2 != blank %}
+          <details class="labsens-nav__dropdown">
+            <summary>{{ block.settings.label | escape }} <span aria-hidden="true">{{ 'labsens-chevron.svg' | inline_asset_content }}</span></summary>
+            <ul>
+              {% if block.settings.url != blank %}<li><a href="{{ block.settings.url }}">{{ block.settings.label | escape }}</a></li>{% endif %}
+              {% for i in (1..2) %}
+                {% assign label_key = 'child_label_' | append: i %}{% assign url_key = 'child_url_' | append: i %}
+                {% if block.settings[label_key] != blank and block.settings[url_key] != blank %}<li><a href="{{ block.settings[url_key] }}">{{ block.settings[label_key] | escape }}</a></li>{% endif %}
+              {% endfor %}
+            </ul>
+          </details>
+        {% elsif block.settings.url != blank %}
+          <a href="{{ block.settings.url }}">{{ block.settings.label | escape }}</a>
+        {% else %}<span>{{ block.settings.label | escape }}</span>{% endif %}
+      </li>
+    {% endfor %}
+  {% endif %}
+</ul>

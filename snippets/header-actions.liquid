@@ -6,6 +6,7 @@
   @param {object} [section] - The section object providing settings such as actions_font.
   @param {block} [block] - The block object, used for Shopify editor attributes.
   @param {string} [display_style] - Controls display mode for header actions: 'icon' or 'text'.
+  @param {string} [cart_icon_asset] - Optional icon asset for branded headers.
   @param {string} [customer_account_menu] - The menu handle passed to the shopify-account component.
 
   @example
@@ -18,6 +19,7 @@
   fetchpriority="low"
 ></script>
 
+{% assign cart_icon_asset = cart_icon_asset | default: 'icon-cart.svg' %}
 {% capture cart_icon %}
   <cart-icon
     class="header-actions__cart-icon{% if display_style == 'text' %} header-actions__cart-icon--text{% endif %}{% unless cart == empty %} header-actions__cart-icon--has-cart{% endunless %}"
@@ -31,7 +33,7 @@
       class="svg-wrapper {% if display_style != 'icon' %}desktop:hidden{% endif %}"
       aria-hidden="true"
     >
-      {{ 'icon-cart.svg' | inline_asset_content }}
+      {{ cart_icon_asset | inline_asset_content }}
     </span>
 
     {% render 'cart-bubble', limit: 100 %}

@@ -1,0 +1,23 @@
+{% doc %}
+  Maps the shared Horizon palette and brand typography to Labsens tokens.
+{% enddoc %}
+{{ 'labsens-tokens.css' | asset_url | stylesheet_tag }}
+{% style %}
+  :root {
+    --labsens-ink: {{ settings.color_palette.foreground | default: '#313131' }};
+    --labsens-paper: {{ settings.color_palette.background | default: '#FAF7EA' }};
+    --labsens-peach: {{ settings.color_palette.color1 | default: '#FDD5B0' }};
+    --labsens-soft: {{ settings.color_palette.color2 | default: '#FDEFE2' }};
+    --labsens-accent: {{ settings.color_palette.color3 | default: '#FBBE9C' }};
+    {% if settings.labsens_brand_font %}
+      --font-body--family: 'Labsens Syne', sans-serif;
+      --font-subheading--family: 'Labsens Syne', sans-serif;
+      --font-heading--family: 'Labsens Syne', sans-serif;
+      --font-accent--family: 'Labsens Syne', sans-serif;
+      --font-body--weight: 400;
+      --font-subheading--weight: 600;
+      --font-heading--weight: 700;
+      --font-accent--weight: 600;
+    {% endif %}
+  }
+{% endstyle %}
