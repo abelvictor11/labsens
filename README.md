@@ -17,7 +17,7 @@ El README original está disponible en `git show 6de238c5fc76a877a73beafc0e34be7
 ## Estado
 
 Base local preparada y documentación inicial. No hay personalización visual ni migración de catálogo todavía.
-La conexión con una tienda Shopify queda pendiente de recibir su dominio `.myshopify.com` y acceso de desarrollo.
+Conexión CLI verificada con `labsens-co.myshopify.com`; previsualización local operativa con CLI 4.8.2. Ver DEVELOPMENT.md.
 
 ## Estructura
 

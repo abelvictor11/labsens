@@ -3,7 +3,7 @@
 ## Entorno inicial
 
 Inspección: 2026-10-19. Git y GitHub CLI disponibles. Shopify CLI instalado: **3.87.0**.
-No se ha iniciado sesión ni desplegado un theme a Shopify en esta preparación.
+Sesión CLI autorizada y previsualización verificada el 2026-10-19.
 
 ## Repositorios
 
@@ -12,7 +12,7 @@ No se ha iniciado sesión ni desplegado un theme a Shopify en esta preparación.
 - Rama inicial: `main`.
 - Base fijada en el commit de Horizon 4.3.0 indicado en BASELINE.md; no actualizar automáticamente desde upstream/main.
 
-## Próxima conexión
+## Flujo de conexión (referencia)
 
 1. Recibir dominio `.myshopify.com` y acceso autorizado a temas.
 2. Revisar la compatibilidad del CLI y volver a ejecutar Theme Check con una versión vigente antes de personalizar.
@@ -31,3 +31,17 @@ Los datos de catálogo, pedidos y clientes no se respaldan en este repositorio.
 ## Actualizaciones de Horizon
 
 Conservar el remoto upstream. Revisar cada actualización en una rama separada, compararla con la versión fijada y probarla antes de integrar. No ejecutar pull de upstream/main directamente sobre producción.
+
+## Conexión verificada · 2026-10-19
+
+- Tienda: `labsens-co.myshopify.com`.
+- Publicado: Horizon, ID `189331407097` (sin cambios).
+- GitHub: labsens/main, ID `189331767545`, no publicado.
+- Desarrollo: ID `189332029689`.
+- Preview local mientras el proceso siga activo: http://127.0.0.1:9292
+- Preview remoto de desarrollo: https://labsens-co.myshopify.com/?preview_theme_id=189332029689
+
+Usar Shopify CLI **4.8.2** para esta base. CLI 3.87.0 produjo rechazos de valores dinámicos de color y errores en cascada de bloques y plantillas durante la carga. Con 4.8.2, sin cambiar el código del theme, la homepage cargó correctamente en el navegador.
+La versión 4.8.2 está instalada de forma aislada fuera del repositorio, en `../work/shopify-cli/node_modules/.bin/shopify`. Para reiniciar desde este checkout usar esa ruta con `theme dev --store labsens-co.myshopify.com`; proporcionar la contraseña del escaparate cuando corresponda. No guardar contraseñas en Git.
+
+La homepage todavía muestra el contenido inicial de Horizon. Esta comprobación acredita el renderizado básico; no es una prueba de catálogo, compra ni fidelidad visual a WordPress.

@@ -20,3 +20,8 @@ Resultado: **exit 1; 8 errores y 3 advertencias en 8 archivos**.
 
 No se corrigieron ni silenciaron estos hallazgos: este commit preserva la base oficial. El CLI instalado es anterior a la versión disponible; la compatibilidad del analizador debe verificarse con una versión vigente antes de atribuir todos los hallazgos a defectos de Horizon.
 No se ha probado renderizado ni checkout en Shopify: falta conectar la tienda.
+
+## Comprobación posterior con CLI 4.8.2
+
+El 2026-10-19 se repitió Theme Check: **2 errores UnknownFilter** (`applicable_disclosures`) y **6 advertencias** (ExcessiveSettingsCount y UnusedDocParam); exit 1. Ver [reporte](audit/2026-10-19/theme-check-cli-4.8.2.json).
+No se afirma que el análisis estático esté limpio. La carga y renderizado básico de la homepage sí fueron verificados en el tema de desarrollo, con esta versión de CLI y sin alterar Horizon.
