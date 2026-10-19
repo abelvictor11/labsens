@@ -1,0 +1,154 @@
+- link "Ir al contenido":
+  - /url: "#content"
+- banner:
+  - heading "Hacemos envíos a todo el país" [level=2]
+  - link:
+    - /url: https://labsens.co
+  - search:
+    - generic: Buscar
+    - combobox "Buscar"
+    - status "Resultados de búsqueda"
+    - button "Buscar"
+  - list:
+    - link "Contacto":
+      - /url: https://labsens.co/contacto/
+      - generic: Contacto
+  - link "0 Carrito":
+    - /url: "#"
+    - generic: "0"
+    - generic: Carrito
+  - navigation "Menú":
+    - list:
+      - link "Cera":
+        - /url: https://labsens.co/categoria-producto/cera/
+      - link "Fragancias":
+        - /url: https://labsens.co/categoria-producto/fragancias/
+        - text: Fragancias
+      - link "Colorantes":
+        - /url: https://labsens.co/categoria-producto/colorantes/
+      - link "Envases":
+        - /url: https://labsens.co/categoria-producto/envases/
+      - link "Pabilos":
+        - /url: https://labsens.co/categoria-producto/pabilos/
+      - link "Accesorios":
+        - /url: https://labsens.co/categoria-producto/accesorios/
+      - link "Aditivos":
+        - /url: https://labsens.co/categoria-producto/aditivos/
+      - link "Todos los productos":
+        - /url: https://labsens.co/tienda/
+      - link "Aprende":
+        - /url: "#"
+        - text: Aprende
+- heading "Cera" [level=1]
+- heading "Filtrar por:" [level=2]
+- generic: Categorías
+- group "Categorías":
+  - generic: Accesorios
+  - generic: Aditivos
+  - generic: Cera
+  - generic: Colorantes
+  - generic: Envases
+  - generic: Fragancias
+  - generic: Pabilos
+- heading "Cera" [level=2]:
+  - link "Cera":
+    - /url: https://labsens.co/categoria-producto/cera/
+- heading "Cera Akosense" [level=2]
+- 'heading "Rango de precios: desde $ 33.861 hasta $ 395.100" [level=2]':
+  - generic: $ 33.861
+  - text: "-"
+  - generic: $ 395.100
+  - generic: "Rango de precios: desde $ 33.861 hasta $ 395.100"
+- link:
+  - /url: https://labsens.co/tienda/cera/cera-akosense/
+- heading "Cera" [level=2]:
+  - link "Cera":
+    - /url: https://labsens.co/categoria-producto/cera/
+- heading "Cera de soya" [level=2]
+- 'heading "Rango de precios: desde $ 33.350 hasta $ 416.000" [level=2]':
+  - generic: $ 33.350
+  - text: "-"
+  - generic: $ 416.000
+  - generic: "Rango de precios: desde $ 33.350 hasta $ 416.000"
+- link:
+  - /url: https://labsens.co/tienda/cera/cera-de-soya/
+- heading "Cera" [level=2]:
+  - link "Cera":
+    - /url: https://labsens.co/categoria-producto/cera/
+- heading "Cera de Vaso" [level=2]
+- 'heading "Rango de precios: desde $ 18.150 hasta $ 311.450" [level=2]':
+  - generic: $ 18.150
+  - text: "-"
+  - generic: $ 311.450
+  - generic: "Rango de precios: desde $ 18.150 hasta $ 311.450"
+- link:
+  - /url: https://labsens.co/tienda/cera/cera-de-vaso/
+- contentinfo:
+  - heading "Compra online" [level=2]
+  - navigation "Menú":
+    - list:
+      - link "Cera":
+        - /url: https://labsens.co/categoria-producto/cera/
+      - link "Parafinas":
+        - /url: https://labsens.co/categoria-producto/parafinas/
+      - link "Fragancias a base de agua":
+        - /url: https://labsens.co/categoria-producto/fragancias/fragancias-a-base-de-agua/
+      - link "Fragancias a base de aceite":
+        - /url: https://labsens.co/categoria-producto/fragancias/fragancias-a-base-de-aceite/
+      - link "Colorantes":
+        - /url: https://labsens.co/categoria-producto/colorantes/
+      - link "Envases":
+        - /url: https://labsens.co/categoria-producto/envases/
+      - link "Accesorios":
+        - /url: https://labsens.co/categoria-producto/accesorios/
+      - link "Aditivos":
+        - /url: https://labsens.co/categoria-producto/aditivos/
+  - heading "Nosotros" [level=2]
+  - navigation "Menú":
+    - list:
+      - link "Tips, guías y consejos":
+        - /url: https://labsens.co/aprende/
+      - link "Contacto":
+        - /url: https://labsens.co/contacto/
+  - heading "Legales" [level=2]
+  - navigation "Menú":
+    - list:
+      - link "Políticas de calidad":
+        - /url: https://labsens.co/politicas-de-calidad/
+      - link "Política de reclamaciones":
+        - /url: https://labsens.co/politica-de-reclamaciones-y-reposicion-de-producto/
+      - link "Tratamiento de datos – Proveedores":
+        - /url: https://labsens.co/wp-content/uploads/2025/07/TRATAMIENTOS-DE-DATOS-PERSONALES-PROVEEDORES.pdf
+      - link "Tratamiento de datos – Clientes":
+        - /url: https://labsens.co/wp-content/uploads/2025/07/POLITICA-DE-TRATAMIENTO-DE-DATOS-PARA-CLIENTES.pdf
+      - link "Términos y Condiciones":
+        - /url: https://labsens.co/terminos-y-condiciones/
+      - link "Política de Privacidad":
+        - /url: https://labsens.co/politica-de-privacidad/
+      - link "Política de Eliminación de Datos":
+        - /url: https://labsens.co/politica-de-eliminacion-de-datos/
+  - heading "Síguenos" [level=2]
+  - list:
+    - link "Instagram":
+      - /url: https://www.instagram.com/labsens.co/
+      - generic: Instagram
+    - link "Youtube":
+      - /url: https://www.youtube.com/channel/UCn3JoUrQBD4lVF2fLIfUhYw/videos
+      - generic: Youtube
+    - link "Facebook":
+      - /url: https://www.facebook.com/Labsens.cijyj/
+      - generic: Facebook
+  - paragraph:
+    - strong: C I J Y J DISTRIBUCIONES S A S
+    - text: NIT 8305082619
+    - text: 79 SUR 101 BG 108, CARRERA 50
+    - text: LA ESTRELLA, Antioquia
+  - text: © Copyright 2026 LabSens – Sitio creado por
+  - link "Pardolikeme":
+    - /url: https://pardolikeme.co
+  - paragraph: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+- dialog:
+  - text: 
+  - button "Alternar Elemento flotante":
+- generic: desktop
+- status

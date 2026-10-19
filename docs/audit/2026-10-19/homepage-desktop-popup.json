@@ -1,0 +1,1031 @@
+{
+  "bodyClass": "home wp-singular page-template-default page page-id-924 wp-custom-logo wp-embed-responsive wp-theme-hello-elementor theme-hello-elementor woocommerce-js hello-elementor-default elementor-default elementor-template-full-width elementor-kit-920 elementor-page elementor-page-924 e--ua-blink e--ua-chrome e--ua-mac e--ua-webkit dialog-body dialog-lightbox-body dialog-container dialog-lightbox-container",
+  "globalTokens": {
+    "--e-global-color-55ba82d": "#FDEFE2",
+    "--e-global-color-accent": "#FFFFFF",
+    "--e-global-color-cc2df78": "#FAF7EA",
+    "--e-global-color-f4cfa48": "#FBBE9C",
+    "--e-global-color-primary": "#313131",
+    "--e-global-color-secondary": "#FDD5B0",
+    "--e-global-color-text": "#313131",
+    "--e-global-typography-30b46a1-font-family": "\"Syne\"",
+    "--e-global-typography-30b46a1-font-size": "18px",
+    "--e-global-typography-30b46a1-font-weight": "400",
+    "--e-global-typography-accent-font-family": "\"Syne\"",
+    "--e-global-typography-accent-font-size": "18px",
+    "--e-global-typography-accent-font-weight": "600",
+    "--e-global-typography-primary-font-family": "\"Syne\"",
+    "--e-global-typography-primary-font-size": "50px",
+    "--e-global-typography-primary-font-weight": "700",
+    "--e-global-typography-secondary-font-family": "\"Syne\"",
+    "--e-global-typography-secondary-font-size": "30px",
+    "--e-global-typography-secondary-font-weight": "700",
+    "--e-global-typography-text-font-family": "\"Syne\"",
+    "--e-global-typography-text-font-size": "16px",
+    "--e-global-typography-text-font-weight": "400"
+  },
+  "headings": [
+    {
+      "color": "rgb(49, 49, 49)",
+      "font": "Syne, sans-serif",
+      "fontSize": "18px",
+      "fontWeight": "600",
+      "lineHeight": "18px",
+      "tag": "H2",
+      "text": "Hacemos envíos a todo el país"
+    },
+    {
+      "color": "rgb(49, 49, 49)",
+      "font": "Syne, sans-serif",
+      "fontSize": "30px",
+      "fontWeight": "700",
+      "lineHeight": "30px",
+      "tag": "H2",
+      "text": "Compra por categorías"
+    },
+    {
+      "color": "rgb(49, 49, 49)",
+      "font": "Syne, sans-serif",
+      "fontSize": "18px",
+      "fontWeight": "600",
+      "lineHeight": "18px",
+      "tag": "H2",
+      "text": "Ceras"
+    },
+    {
+      "color": "rgb(49, 49, 49)",
+      "font": "Syne, sans-serif",
+      "fontSize": "18px",
+      "fontWeight": "600",
+      "lineHeight": "18px",
+      "tag": "H2",
+      "text": "Envases"
+    },
+    {
+      "color": "rgb(49, 49, 49)",
+      "font": "Syne, sans-serif",
+      "fontSize": "18px",
+      "fontWeight": "600",
+      "lineHeight": "18px",
+      "tag": "H2",
+      "text": "Colorantes"
+    },
+    {
+      "color": "rgb(49, 49, 49)",
+      "font": "Syne, sans-serif",
+      "fontSize": "18px",
+      "fontWeight": "600",
+      "lineHeight": "18px",
+      "tag": "H2",
+      "text": "Fragancias"
+    },
+    {
+      "color": "rgb(49, 49, 49)",
+      "font": "Syne, sans-serif",
+      "fontSize": "18px",
+      "fontWeight": "600",
+      "lineHeight": "18px",
+      "tag": "H2",
+      "text": "Pabilos"
+    },
+    {
+      "color": "rgb(49, 49, 49)",
+      "font": "Syne, sans-serif",
+      "fontSize": "18px",
+      "fontWeight": "600",
+      "lineHeight": "18px",
+      "tag": "H2",
+      "text": "Accesorios"
+    },
+    {
+      "color": "rgb(49, 49, 49)",
+      "font": "Syne, sans-serif",
+      "fontSize": "30px",
+      "fontWeight": "700",
+      "lineHeight": "30px",
+      "tag": "H2",
+      "text": "Fragancias temporada de Madres"
+    },
+    {
+      "color": "rgb(49, 49, 49)",
+      "font": "Syne, sans-serif",
+      "fontSize": "30px",
+      "fontWeight": "700",
+      "lineHeight": "30px",
+      "tag": "H2",
+      "text": "KIT DE MADRES:\nAlma femenina"
+    },
+    {
+      "color": "rgb(49, 49, 49)",
+      "font": "Syne, sans-serif",
+      "fontSize": "30px",
+      "fontWeight": "700",
+      "lineHeight": "30px",
+      "tag": "H2",
+      "text": "Nuestras ceras perfectas para esta temporada"
+    },
+    {
+      "color": "rgb(49, 49, 49)",
+      "font": "Syne, sans-serif",
+      "fontSize": "30px",
+      "fontWeight": "700",
+      "lineHeight": "30px",
+      "tag": "H2",
+      "text": "¿Nuevo en el mundo de las velas?"
+    },
+    {
+      "color": "rgb(49, 49, 49)",
+      "font": "Syne, sans-serif",
+      "fontSize": "30px",
+      "fontWeight": "700",
+      "lineHeight": "30px",
+      "tag": "H2",
+      "text": "Trabajamos con los mejores"
+    },
+    {
+      "color": "rgb(49, 49, 49)",
+      "font": "Syne, sans-serif",
+      "fontSize": "30px",
+      "fontWeight": "700",
+      "lineHeight": "30px",
+      "tag": "H2",
+      "text": "Recursos educativos"
+    },
+    {
+      "color": "rgb(49, 49, 49)",
+      "font": "Syne, sans-serif",
+      "fontSize": "21px",
+      "fontWeight": "700",
+      "lineHeight": "25.2px",
+      "tag": "H3",
+      "text": "Colorantes"
+    },
+    {
+      "color": "rgb(49, 49, 49)",
+      "font": "Syne, sans-serif",
+      "fontSize": "21px",
+      "fontWeight": "700",
+      "lineHeight": "25.2px",
+      "tag": "H3",
+      "text": "Weissen"
+    },
+    {
+      "color": "rgb(49, 49, 49)",
+      "font": "Syne, sans-serif",
+      "fontSize": "21px",
+      "fontWeight": "700",
+      "lineHeight": "25.2px",
+      "tag": "H3",
+      "text": "Cera de palma"
+    },
+    {
+      "color": "rgb(49, 49, 49)",
+      "font": "Syne, sans-serif",
+      "fontSize": "18px",
+      "fontWeight": "700",
+      "lineHeight": "18px",
+      "tag": "H2",
+      "text": "Compra online"
+    },
+    {
+      "color": "rgb(49, 49, 49)",
+      "font": "Syne, sans-serif",
+      "fontSize": "18px",
+      "fontWeight": "700",
+      "lineHeight": "18px",
+      "tag": "H2",
+      "text": "Nosotros"
+    },
+    {
+      "color": "rgb(49, 49, 49)",
+      "font": "Syne, sans-serif",
+      "fontSize": "18px",
+      "fontWeight": "700",
+      "lineHeight": "18px",
+      "tag": "H2",
+      "text": "Legales"
+    },
+    {
+      "color": "rgb(49, 49, 49)",
+      "font": "Syne, sans-serif",
+      "fontSize": "18px",
+      "fontWeight": "700",
+      "lineHeight": "18px",
+      "tag": "H2",
+      "text": "Síguenos"
+    },
+    {
+      "color": "rgb(49, 49, 49)",
+      "font": "Syne, sans-serif",
+      "fontSize": "24px",
+      "fontWeight": "700",
+      "lineHeight": "24px",
+      "tag": "H2",
+      "text": "Tenemos un regalo para ti y tu emprendimiento"
+    }
+  ],
+  "images": [
+    {
+      "alt": "",
+      "height": 81,
+      "src": "https://labsens.co/wp-content/uploads/2025/01/Labsens_logo_web.svg",
+      "width": 405
+    },
+    {
+      "alt": "",
+      "height": 81,
+      "src": "https://labsens.co/wp-content/uploads/2025/01/Labsens_logo_web.svg",
+      "width": 405
+    },
+    {
+      "alt": "",
+      "height": 444,
+      "src": "https://labsens.co/wp-content/uploads/2025/06/Ceras_Labsens.jpg",
+      "width": 333
+    },
+    {
+      "alt": "",
+      "height": 444,
+      "src": "https://labsens.co/wp-content/uploads/2025/01/Envases_LabSens.jpg",
+      "width": 333
+    },
+    {
+      "alt": "",
+      "height": 444,
+      "src": "https://labsens.co/wp-content/uploads/2025/07/Colorantes_LabSens.jpg",
+      "width": 333
+    },
+    {
+      "alt": "",
+      "height": 444,
+      "src": "https://labsens.co/wp-content/uploads/2025/06/Fragancias_Labsens.jpg",
+      "width": 333
+    },
+    {
+      "alt": "",
+      "height": 444,
+      "src": "https://labsens.co/wp-content/uploads/2025/06/Parafinas_Labsens.jpg",
+      "width": 333
+    },
+    {
+      "alt": "",
+      "height": 444,
+      "src": "https://labsens.co/wp-content/uploads/2025/06/Accesorios_Labsens.jpg",
+      "width": 333
+    },
+    {
+      "alt": "",
+      "height": 0,
+      "src": "https://labsens.co/wp-content/uploads/2025/01/AAK_logo.png",
+      "width": 0
+    },
+    {
+      "alt": "",
+      "height": 0,
+      "src": "https://labsens.co/wp-content/uploads/2025/01/fcf_logo.png",
+      "width": 0
+    },
+    {
+      "alt": "",
+      "height": 0,
+      "src": "https://labsens.co/wp-content/uploads/2025/01/global_wax_logo.png",
+      "width": 0
+    },
+    {
+      "alt": "",
+      "height": 0,
+      "src": "https://labsens.co/wp-content/uploads/2025/01/sao_vitor_logo.png",
+      "width": 0
+    },
+    {
+      "alt": "",
+      "height": 766,
+      "src": "https://labsens.co/wp-content/uploads/2025/10/colorantes.jpg",
+      "width": 774
+    },
+    {
+      "alt": "",
+      "height": 766,
+      "src": "https://labsens.co/wp-content/uploads/2025/10/aditivos.jpg",
+      "width": 774
+    },
+    {
+      "alt": "",
+      "height": 766,
+      "src": "https://labsens.co/wp-content/uploads/2025/10/cera-palma-velas1.jpg",
+      "width": 774
+    },
+    {
+      "alt": "",
+      "height": 116,
+      "src": "https://labsens.co/wp-content/uploads/2025/01/Logo_Favicon_labsens.svg",
+      "width": 195
+    },
+    {
+      "alt": "",
+      "height": 138,
+      "src": "https://labsens.co/wp-content/uploads/2025/01/Pagos-Wompi-logos-1.png",
+      "width": 515
+    },
+    {
+      "alt": "",
+      "height": 300,
+      "src": "https://labsens.co/wp-content/uploads/2025/07/Avatar-Whatsapp.png",
+      "width": 300
+    },
+    {
+      "alt": "",
+      "height": 116,
+      "src": "https://labsens.co/wp-content/uploads/2025/01/Logo_Favicon_labsens.svg",
+      "width": 195
+    }
+  ],
+  "links": [
+    {
+      "href": "https://labsens.co/#content",
+      "text": "Ir al contenido"
+    },
+    {
+      "href": "https://labsens.co/",
+      "text": ""
+    },
+    {
+      "href": "https://labsens.co/contacto/",
+      "text": "Contacto"
+    },
+    {
+      "href": "https://labsens.co/#",
+      "text": "0\nCarrito"
+    },
+    {
+      "href": "https://labsens.co/categoria-producto/cera/",
+      "text": "Cera"
+    },
+    {
+      "href": "https://labsens.co/categoria-producto/fragancias/",
+      "text": "Fragancias"
+    },
+    {
+      "href": "https://labsens.co/categoria-producto/fragancias/fragancias-a-base-de-aceite/",
+      "text": "Fragancias a base de aceite"
+    },
+    {
+      "href": "https://labsens.co/categoria-producto/fragancias/fragancias-a-base-de-agua/",
+      "text": "Fragancias a base de agua"
+    },
+    {
+      "href": "https://labsens.co/categoria-producto/colorantes/",
+      "text": "Colorantes"
+    },
+    {
+      "href": "https://labsens.co/categoria-producto/envases/",
+      "text": "Envases"
+    },
+    {
+      "href": "https://labsens.co/categoria-producto/pabilos/",
+      "text": "Pabilos"
+    },
+    {
+      "href": "https://labsens.co/categoria-producto/accesorios/",
+      "text": "Accesorios"
+    },
+    {
+      "href": "https://labsens.co/categoria-producto/aditivos/",
+      "text": "Aditivos"
+    },
+    {
+      "href": "https://labsens.co/tienda/",
+      "text": "Todos los productos"
+    },
+    {
+      "href": "https://labsens.co/#",
+      "text": "Aprende"
+    },
+    {
+      "href": "https://labsens.co/aprende/",
+      "text": "Guías, consejos e inspiración"
+    },
+    {
+      "href": "https://labsens.co/video-tutoriales/",
+      "text": "Video tutoriales"
+    },
+    {
+      "href": "https://labsens.co/categoria-producto/cera/",
+      "text": "Cera"
+    },
+    {
+      "href": "https://labsens.co/categoria-producto/fragancias/",
+      "text": "Fragancias"
+    },
+    {
+      "href": "https://labsens.co/categoria-producto/fragancias/fragancias-a-base-de-aceite/",
+      "text": "Fragancias a base de aceite"
+    },
+    {
+      "href": "https://labsens.co/categoria-producto/fragancias/fragancias-a-base-de-agua/",
+      "text": "Fragancias a base de agua"
+    },
+    {
+      "href": "https://labsens.co/categoria-producto/colorantes/",
+      "text": "Colorantes"
+    },
+    {
+      "href": "https://labsens.co/categoria-producto/envases/",
+      "text": "Envases"
+    },
+    {
+      "href": "https://labsens.co/categoria-producto/pabilos/",
+      "text": "Pabilos"
+    },
+    {
+      "href": "https://labsens.co/categoria-producto/accesorios/",
+      "text": "Accesorios"
+    },
+    {
+      "href": "https://labsens.co/categoria-producto/aditivos/",
+      "text": "Aditivos"
+    },
+    {
+      "href": "https://labsens.co/tienda/",
+      "text": "Todos los productos"
+    },
+    {
+      "href": "https://labsens.co/#",
+      "text": "Aprende"
+    },
+    {
+      "href": "https://labsens.co/aprende/",
+      "text": "Guías, consejos e inspiración"
+    },
+    {
+      "href": "https://labsens.co/video-tutoriales/",
+      "text": "Video tutoriales"
+    },
+    {
+      "href": "https://labsens.co/",
+      "text": ""
+    },
+    {
+      "href": "https://labsens.co/contacto/",
+      "text": "Contacto"
+    },
+    {
+      "href": "https://labsens.co/#",
+      "text": "$ 0\n\t\t\t\t\n\t\t\t\t\t0\n\t\t\t\t\t\t\t\t\t\tCarrito"
+    },
+    {
+      "href": "https://labsens.co/categoria-producto/cera/",
+      "text": "Cera"
+    },
+    {
+      "href": "https://labsens.co/categoria-producto/fragancias/",
+      "text": "Fragancias"
+    },
+    {
+      "href": "https://labsens.co/categoria-producto/fragancias/fragancias-a-base-de-aceite/",
+      "text": "Fragancias a base de aceite"
+    },
+    {
+      "href": "https://labsens.co/categoria-producto/fragancias/fragancias-a-base-de-agua/",
+      "text": "Fragancias a base de agua"
+    },
+    {
+      "href": "https://labsens.co/categoria-producto/colorantes/",
+      "text": "Colorantes"
+    },
+    {
+      "href": "https://labsens.co/categoria-producto/envases/",
+      "text": "Envases"
+    },
+    {
+      "href": "https://labsens.co/categoria-producto/pabilos/",
+      "text": "Pabilos"
+    },
+    {
+      "href": "https://labsens.co/categoria-producto/accesorios/",
+      "text": "Accesorios"
+    },
+    {
+      "href": "https://labsens.co/categoria-producto/aditivos/",
+      "text": "Aditivos"
+    },
+    {
+      "href": "https://labsens.co/tienda/",
+      "text": "Todos los productos"
+    },
+    {
+      "href": "https://labsens.co/#",
+      "text": "Aprende"
+    },
+    {
+      "href": "https://labsens.co/aprende/",
+      "text": "Guías, consejos e inspiración"
+    },
+    {
+      "href": "https://labsens.co/video-tutoriales/",
+      "text": "Video tutoriales"
+    },
+    {
+      "href": "https://labsens.co/categoria-producto/cera/",
+      "text": "Cera"
+    },
+    {
+      "href": "https://labsens.co/categoria-producto/fragancias/",
+      "text": "Fragancias"
+    },
+    {
+      "href": "https://labsens.co/categoria-producto/fragancias/fragancias-a-base-de-aceite/",
+      "text": "Fragancias a base de aceite"
+    },
+    {
+      "href": "https://labsens.co/categoria-producto/fragancias/fragancias-a-base-de-agua/",
+      "text": "Fragancias a base de agua"
+    },
+    {
+      "href": "https://labsens.co/categoria-producto/colorantes/",
+      "text": "Colorantes"
+    },
+    {
+      "href": "https://labsens.co/categoria-producto/envases/",
+      "text": "Envases"
+    },
+    {
+      "href": "https://labsens.co/categoria-producto/pabilos/",
+      "text": "Pabilos"
+    },
+    {
+      "href": "https://labsens.co/categoria-producto/accesorios/",
+      "text": "Accesorios"
+    },
+    {
+      "href": "https://labsens.co/categoria-producto/aditivos/",
+      "text": "Aditivos"
+    },
+    {
+      "href": "https://labsens.co/tienda/",
+      "text": "Todos los productos"
+    },
+    {
+      "href": "https://labsens.co/#",
+      "text": "Aprende"
+    },
+    {
+      "href": "https://labsens.co/aprende/",
+      "text": "Guías, consejos e inspiración"
+    },
+    {
+      "href": "https://labsens.co/video-tutoriales/",
+      "text": "Video tutoriales"
+    },
+    {
+      "href": "https://labsens.co/#",
+      "text": "$ 0\n\t\t\t\t\n\t\t\t\t\t0\n\t\t\t\t\t\t\t\t\t\tCarrito"
+    },
+    {
+      "href": "https://labsens.co/categoria-producto/cera/",
+      "text": "Cera"
+    },
+    {
+      "href": "https://labsens.co/categoria-producto/fragancias/",
+      "text": "Fragancias"
+    },
+    {
+      "href": "https://labsens.co/categoria-producto/fragancias/fragancias-a-base-de-aceite/",
+      "text": "Fragancias a base de aceite"
+    },
+    {
+      "href": "https://labsens.co/categoria-producto/fragancias/fragancias-a-base-de-agua/",
+      "text": "Fragancias a base de agua"
+    },
+    {
+      "href": "https://labsens.co/categoria-producto/colorantes/",
+      "text": "Colorantes"
+    },
+    {
+      "href": "https://labsens.co/categoria-producto/envases/",
+      "text": "Envases"
+    },
+    {
+      "href": "https://labsens.co/categoria-producto/pabilos/",
+      "text": "Pabilos"
+    },
+    {
+      "href": "https://labsens.co/categoria-producto/accesorios/",
+      "text": "Accesorios"
+    },
+    {
+      "href": "https://labsens.co/categoria-producto/aditivos/",
+      "text": "Aditivos"
+    },
+    {
+      "href": "https://labsens.co/tienda/",
+      "text": "Todos los productos"
+    },
+    {
+      "href": "https://labsens.co/#",
+      "text": "Aprende"
+    },
+    {
+      "href": "https://labsens.co/aprende/",
+      "text": "Guías, consejos e inspiración"
+    },
+    {
+      "href": "https://labsens.co/video-tutoriales/",
+      "text": "Video tutoriales"
+    },
+    {
+      "href": "https://labsens.co/categoria-producto/cera/",
+      "text": "Cera"
+    },
+    {
+      "href": "https://labsens.co/categoria-producto/fragancias/",
+      "text": "Fragancias"
+    },
+    {
+      "href": "https://labsens.co/categoria-producto/fragancias/fragancias-a-base-de-aceite/",
+      "text": "Fragancias a base de aceite"
+    },
+    {
+      "href": "https://labsens.co/categoria-producto/fragancias/fragancias-a-base-de-agua/",
+      "text": "Fragancias a base de agua"
+    },
+    {
+      "href": "https://labsens.co/categoria-producto/colorantes/",
+      "text": "Colorantes"
+    },
+    {
+      "href": "https://labsens.co/categoria-producto/envases/",
+      "text": "Envases"
+    },
+    {
+      "href": "https://labsens.co/categoria-producto/pabilos/",
+      "text": "Pabilos"
+    },
+    {
+      "href": "https://labsens.co/categoria-producto/accesorios/",
+      "text": "Accesorios"
+    },
+    {
+      "href": "https://labsens.co/categoria-producto/aditivos/",
+      "text": "Aditivos"
+    },
+    {
+      "href": "https://labsens.co/tienda/",
+      "text": "Todos los productos"
+    },
+    {
+      "href": "https://labsens.co/#",
+      "text": "Aprende"
+    },
+    {
+      "href": "https://labsens.co/aprende/",
+      "text": "Guías, consejos e inspiración"
+    },
+    {
+      "href": "https://labsens.co/video-tutoriales/",
+      "text": "Video tutoriales"
+    },
+    {
+      "href": "http://wa.me/573202141507",
+      "text": ""
+    },
+    {
+      "href": "https://labsenscijyj.hotmart.host/ventaslabsenshotmart",
+      "text": ""
+    },
+    {
+      "href": "http://wa.me/573202141507",
+      "text": ""
+    },
+    {
+      "href": "https://labsenscijyj.hotmart.host/ventaslabsenshotmart",
+      "text": ""
+    },
+    {
+      "href": "http://wa.me/573202141507",
+      "text": ""
+    },
+    {
+      "href": "https://labsenscijyj.hotmart.host/ventaslabsenshotmart",
+      "text": ""
+    },
+    {
+      "href": "http://wa.me/573202141507",
+      "text": ""
+    },
+    {
+      "href": "https://labsens.co/tienda/",
+      "text": ""
+    },
+    {
+      "href": "http://wa.me/573202141507",
+      "text": ""
+    },
+    {
+      "href": "https://labsens.co/tienda/",
+      "text": ""
+    },
+    {
+      "href": "http://wa.me/573202141507",
+      "text": ""
+    },
+    {
+      "href": "https://labsens.co/tienda/",
+      "text": ""
+    },
+    {
+      "href": "https://labsens.co/categoria-producto/cera/",
+      "text": ""
+    },
+    {
+      "href": "https://labsens.co/categoria-producto/ceras/",
+      "text": "Ceras"
+    },
+    {
+      "href": "https://labsens.co/categoria-producto/envases/",
+      "text": ""
+    },
+    {
+      "href": "https://labsens.co/categoria-producto/envases",
+      "text": "Envases"
+    },
+    {
+      "href": "https://labsens.co/categoria-producto/colorantes/",
+      "text": ""
+    },
+    {
+      "href": "https://labsens.co/categoria-producto/colorantes",
+      "text": "Colorantes"
+    },
+    {
+      "href": "https://labsens.co/categoria-producto/fragancias/",
+      "text": ""
+    },
+    {
+      "href": "https://labsens.co/categoria-producto/fragancias",
+      "text": "Fragancias"
+    },
+    {
+      "href": "https://labsens.co/categoria-producto/pabilos/",
+      "text": ""
+    },
+    {
+      "href": "https://labsens.co/categoria-producto/pabilos",
+      "text": "Pabilos"
+    },
+    {
+      "href": "https://labsens.co/categoria-producto/accesorios/",
+      "text": ""
+    },
+    {
+      "href": "https://labsens.co/categoria-producto/recipientes/",
+      "text": "Accesorios"
+    },
+    {
+      "href": "https://labsens.co/tienda/",
+      "text": "Comienza tu viaje aquí"
+    },
+    {
+      "href": "https://labsens.co/colorantes/",
+      "text": ""
+    },
+    {
+      "href": "https://labsens.co/colorantes/",
+      "text": "Colorantes"
+    },
+    {
+      "href": "https://labsens.co/colorantes/",
+      "text": "LEER MÁS »"
+    },
+    {
+      "href": "https://labsens.co/weissen/",
+      "text": ""
+    },
+    {
+      "href": "https://labsens.co/weissen/",
+      "text": "Weissen"
+    },
+    {
+      "href": "https://labsens.co/weissen/",
+      "text": "LEER MÁS »"
+    },
+    {
+      "href": "https://labsens.co/cera-de-palma/",
+      "text": ""
+    },
+    {
+      "href": "https://labsens.co/cera-de-palma/",
+      "text": "Cera de palma"
+    },
+    {
+      "href": "https://labsens.co/cera-de-palma/",
+      "text": "LEER MÁS »"
+    },
+    {
+      "href": "https://labsens.co/categoria-producto/cera/",
+      "text": "Cera"
+    },
+    {
+      "href": "https://labsens.co/categoria-producto/parafinas/",
+      "text": "Parafinas"
+    },
+    {
+      "href": "https://labsens.co/categoria-producto/fragancias/fragancias-a-base-de-agua/",
+      "text": "Fragancias a base de agua"
+    },
+    {
+      "href": "https://labsens.co/categoria-producto/fragancias/fragancias-a-base-de-aceite/",
+      "text": "Fragancias a base de aceite"
+    },
+    {
+      "href": "https://labsens.co/categoria-producto/colorantes/",
+      "text": "Colorantes"
+    },
+    {
+      "href": "https://labsens.co/categoria-producto/envases/",
+      "text": "Envases"
+    },
+    {
+      "href": "https://labsens.co/categoria-producto/accesorios/",
+      "text": "Accesorios"
+    },
+    {
+      "href": "https://labsens.co/categoria-producto/aditivos/",
+      "text": "Aditivos"
+    },
+    {
+      "href": "https://labsens.co/categoria-producto/cera/",
+      "text": "Cera"
+    },
+    {
+      "href": "https://labsens.co/categoria-producto/parafinas/",
+      "text": "Parafinas"
+    },
+    {
+      "href": "https://labsens.co/categoria-producto/fragancias/fragancias-a-base-de-agua/",
+      "text": "Fragancias a base de agua"
+    },
+    {
+      "href": "https://labsens.co/categoria-producto/fragancias/fragancias-a-base-de-aceite/",
+      "text": "Fragancias a base de aceite"
+    },
+    {
+      "href": "https://labsens.co/categoria-producto/colorantes/",
+      "text": "Colorantes"
+    },
+    {
+      "href": "https://labsens.co/categoria-producto/envases/",
+      "text": "Envases"
+    },
+    {
+      "href": "https://labsens.co/categoria-producto/accesorios/",
+      "text": "Accesorios"
+    },
+    {
+      "href": "https://labsens.co/categoria-producto/aditivos/",
+      "text": "Aditivos"
+    },
+    {
+      "href": "https://labsens.co/aprende/",
+      "text": "Tips, guías y consejos"
+    },
+    {
+      "href": "https://labsens.co/contacto/",
+      "text": "Contacto"
+    },
+    {
+      "href": "https://labsens.co/aprende/",
+      "text": "Tips, guías y consejos"
+    },
+    {
+      "href": "https://labsens.co/contacto/",
+      "text": "Contacto"
+    },
+    {
+      "href": "https://labsens.co/politicas-de-calidad/",
+      "text": "Políticas de calidad"
+    },
+    {
+      "href": "https://labsens.co/politica-de-reclamaciones-y-reposicion-de-producto/",
+      "text": "Política de reclamaciones"
+    },
+    {
+      "href": "https://labsens.co/wp-content/uploads/2025/07/TRATAMIENTOS-DE-DATOS-PERSONALES-PROVEEDORES.pdf",
+      "text": "Tratamiento de datos – Proveedores"
+    },
+    {
+      "href": "https://labsens.co/wp-content/uploads/2025/07/POLITICA-DE-TRATAMIENTO-DE-DATOS-PARA-CLIENTES.pdf",
+      "text": "Tratamiento de datos – Clientes"
+    },
+    {
+      "href": "https://labsens.co/terminos-y-condiciones/",
+      "text": "Términos y Condiciones"
+    },
+    {
+      "href": "https://labsens.co/politica-de-privacidad/",
+      "text": "Política de Privacidad"
+    },
+    {
+      "href": "https://labsens.co/politica-de-eliminacion-de-datos/",
+      "text": "Política de Eliminación de Datos"
+    },
+    {
+      "href": "https://labsens.co/politicas-de-calidad/",
+      "text": "Políticas de calidad"
+    },
+    {
+      "href": "https://labsens.co/politica-de-reclamaciones-y-reposicion-de-producto/",
+      "text": "Política de reclamaciones"
+    },
+    {
+      "href": "https://labsens.co/wp-content/uploads/2025/07/TRATAMIENTOS-DE-DATOS-PERSONALES-PROVEEDORES.pdf",
+      "text": "Tratamiento de datos – Proveedores"
+    },
+    {
+      "href": "https://labsens.co/wp-content/uploads/2025/07/POLITICA-DE-TRATAMIENTO-DE-DATOS-PARA-CLIENTES.pdf",
+      "text": "Tratamiento de datos – Clientes"
+    },
+    {
+      "href": "https://labsens.co/terminos-y-condiciones/",
+      "text": "Términos y Condiciones"
+    },
+    {
+      "href": "https://labsens.co/politica-de-privacidad/",
+      "text": "Política de Privacidad"
+    },
+    {
+      "href": "https://labsens.co/politica-de-eliminacion-de-datos/",
+      "text": "Política de Eliminación de Datos"
+    },
+    {
+      "href": "https://www.instagram.com/labsens.co/",
+      "text": "Instagram"
+    },
+    {
+      "href": "https://www.youtube.com/channel/UCn3JoUrQBD4lVF2fLIfUhYw/videos",
+      "text": "Youtube"
+    },
+    {
+      "href": "https://www.facebook.com/Labsens.cijyj/",
+      "text": "Facebook"
+    },
+    {
+      "href": "https://pardolikeme.co/",
+      "text": "Pardolikeme"
+    },
+    {
+      "href": "https://wa.me/573202141507",
+      "text": "Empezar a chatear"
+    },
+    {
+      "href": "https://labsens.co/#",
+      "text": ""
+    }
+  ],
+  "stylesheets": [
+    "https://labsens.co/wp-content/plugins/jet-engine/assets/css/frontend.css?ver=3.8.13.2",
+    "https://labsens.co/wp-content/plugins/woocommerce-tcc-shipping/public/css/woocommerce-tcc-shipping-public.css?ver=1.0.0",
+    "https://labsens.co/wp-content/plugins/woocommerce/assets/css/woocommerce-layout.css?ver=11.1.2",
+    "https://labsens.co/wp-content/plugins/woocommerce/assets/css/woocommerce-smallscreen.css?ver=11.1.2",
+    "https://labsens.co/wp-content/plugins/woocommerce/assets/css/woocommerce.css?ver=11.1.2",
+    "https://labsens.co/wp-content/themes/hello-elementor/assets/css/reset.css?ver=3.5.1",
+    "https://labsens.co/wp-content/themes/hello-elementor/assets/css/theme.css?ver=3.5.1",
+    "https://labsens.co/wp-content/themes/hello-elementor/assets/css/header-footer.css?ver=3.5.1",
+    "https://labsens.co/wp-content/plugins/elementor/assets/css/conditionals/dialog.min.css?ver=4.3.2",
+    "https://labsens.co/wp-content/plugins/elementor/assets/css/frontend.min.css?ver=4.3.2",
+    "https://labsens.co/wp-content/uploads/elementor/css/post-920.css?ver=1791458653",
+    "https://labsens.co/wp-content/plugins/elementor/assets/css/widget-heading.min.css?ver=4.3.2",
+    "https://labsens.co/wp-content/plugins/elementor/assets/css/widget-image.min.css?ver=4.3.2",
+    "https://labsens.co/wp-content/plugins/elementor-pro/assets/css/widget-search.min.css?ver=4.2.0",
+    "https://labsens.co/wp-content/plugins/elementor/assets/css/widget-icon-list.min.css?ver=4.3.2",
+    "https://labsens.co/wp-content/plugins/elementor-pro/assets/css/widget-woocommerce-menu-cart.min.css?ver=4.2.0",
+    "https://labsens.co/wp-content/plugins/elementor-pro/assets/css/widget-nav-menu.min.css?ver=4.2.0",
+    "https://labsens.co/wp-content/plugins/elementor-pro/assets/css/modules/sticky.min.css?ver=4.2.0",
+    "https://labsens.co/wp-content/plugins/elementor/assets/lib/animations/styles/e-animation-float.min.css?ver=4.3.2",
+    "https://labsens.co/wp-content/plugins/elementor/assets/css/widget-social-icons.min.css?ver=4.3.2",
+    "https://labsens.co/wp-content/plugins/elementor/assets/css/conditionals/apple-webkit.min.css?ver=4.3.2",
+    "https://labsens.co/wp-content/plugins/elementor-pro/assets/css/widget-form.min.css?ver=4.2.0",
+    "https://labsens.co/wp-content/plugins/elementor-pro/assets/css/conditionals/popup.min.css?ver=4.2.0",
+    "https://labsens.co/wp-content/plugins/elementor/assets/lib/animations/styles/fadeInUp.min.css?ver=4.3.2",
+    "https://labsens.co/wp-content/plugins/elementor/assets/lib/animations/styles/e-animation-grow.min.css?ver=4.3.2",
+    "https://labsens.co/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=5.54.0",
+    "https://labsens.co/wp-content/plugins/elementor/assets/css/widget-contact-buttons-base.min.css?ver=4.3.2",
+    "https://labsens.co/wp-content/plugins/elementor/assets/lib/swiper/v8/css/swiper.min.css?ver=8.4.5",
+    "https://labsens.co/wp-content/plugins/elementor/assets/css/conditionals/e-swiper.min.css?ver=4.3.2",
+    "https://labsens.co/wp-content/plugins/elementor-pro/assets/css/widget-slides.min.css?ver=4.2.0",
+    "https://labsens.co/wp-content/plugins/elementor-pro/assets/css/widget-posts.min.css?ver=4.2.0",
+    "https://labsens.co/wp-content/uploads/elementor/css/post-924.css?ver=1791458654",
+    "https://labsens.co/wp-content/uploads/elementor/css/post-1111.css?ver=1791458654",
+    "https://labsens.co/wp-content/uploads/elementor/css/post-1128.css?ver=1791458654",
+    "https://labsens.co/wp-content/uploads/elementor/css/post-3267.css?ver=1791458655",
+    "https://labsens.co/wp-content/uploads/elementor/css/post-1861.css?ver=1791458655",
+    "https://labsens.co/wp-content/uploads/elementor/google-fonts/css/syne.css?ver=1753395475",
+    "https://labsens.co/wp-content/plugins/elementor/assets/css/conditionals/lightbox.min.css?ver=4.3.2"
+  ],
+  "title": "LabSens",
+  "url": "https://labsens.co/",
+  "viewport": {
+    "height": 720,
+    "width": 1280
+  }
+}

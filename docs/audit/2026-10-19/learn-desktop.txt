@@ -1,0 +1,282 @@
+- link "Ir al contenido":
+  - /url: "#content"
+- banner:
+  - heading "Hacemos envíos a todo el país" [level=2]
+  - link:
+    - /url: https://labsens.co
+  - search:
+    - generic: Buscar
+    - combobox "Buscar"
+    - status "Resultados de búsqueda"
+    - button "Buscar"
+  - list:
+    - link "Contacto":
+      - /url: https://labsens.co/contacto/
+      - generic: Contacto
+  - link "0 Carrito":
+    - /url: "#"
+    - generic: "0"
+    - generic: Carrito
+  - navigation "Menú":
+    - list:
+      - link "Cera":
+        - /url: https://labsens.co/categoria-producto/cera/
+      - link "Fragancias":
+        - /url: https://labsens.co/categoria-producto/fragancias/
+        - text: Fragancias
+      - link "Colorantes":
+        - /url: https://labsens.co/categoria-producto/colorantes/
+      - link "Envases":
+        - /url: https://labsens.co/categoria-producto/envases/
+      - link "Pabilos":
+        - /url: https://labsens.co/categoria-producto/pabilos/
+      - link "Accesorios":
+        - /url: https://labsens.co/categoria-producto/accesorios/
+      - link "Aditivos":
+        - /url: https://labsens.co/categoria-producto/aditivos/
+      - link "Todos los productos":
+        - /url: https://labsens.co/tienda/
+      - link "Aprende":
+        - /url: "#"
+        - text: Aprende
+- heading "Tips, guías y consejos" [level=2]
+- paragraph: Encuentra tips, consejos y guías para aprender a usar las ceras, parafinas, fragancias y colorantes para fabricar tus velas y crear verdaderas experiencias sensoriales
+- group "Filtra el contenido:":
+  - generic: Sobre ceras
+  - generic: Sobre colorantes
+  - generic: Sobre emprendimiento
+  - generic: Sobre fragancias
+  - generic: Sobre pabilos
+  - generic: Uncategorized
+- list:
+  - link:
+    - /url: https://labsens.co/cual-es-la-mejor-cera-para-empezar-en-el-mundo-de-las-velas/
+  - generic: Sobre ceras
+  - heading "¿Cuál es la mejor cera para empezar en el mundo de las velas?" [level=3]:
+    - link "¿Cuál es la mejor cera para empezar en el mundo de las velas?":
+      - /url: https://labsens.co/cual-es-la-mejor-cera-para-empezar-en-el-mundo-de-las-velas/
+  - link "Más información sobre ¿Cuál es la mejor cera para empezar en el mundo de las velas?":
+    - /url: https://labsens.co/cual-es-la-mejor-cera-para-empezar-en-el-mundo-de-las-velas/
+    - text: Leer más »
+  - link:
+    - /url: https://labsens.co/diferencias-entre-la-cera-de-soya-palma-y-parafina/
+  - generic: Sobre ceras
+  - heading "Diferencias entre la cera de soya, palma y parafina." [level=3]:
+    - link "Diferencias entre la cera de soya, palma y parafina.":
+      - /url: https://labsens.co/diferencias-entre-la-cera-de-soya-palma-y-parafina/
+  - link "Más información sobre Diferencias entre la cera de soya, palma y parafina.":
+    - /url: https://labsens.co/diferencias-entre-la-cera-de-soya-palma-y-parafina/
+    - text: Leer más »
+  - link:
+    - /url: https://labsens.co/por-que-mi-vela-se-agrieta/
+  - generic: Sobre ceras
+  - heading "¿Por qué mi vela se agrieta?" [level=3]:
+    - link "¿Por qué mi vela se agrieta?":
+      - /url: https://labsens.co/por-que-mi-vela-se-agrieta/
+  - link "Más información sobre ¿Por qué mi vela se agrieta?":
+    - /url: https://labsens.co/por-que-mi-vela-se-agrieta/
+    - text: Leer más »
+  - link:
+    - /url: https://labsens.co/cuanto-porcentaje-de-fragancia-debo-usar-segun-mi-cera/
+  - generic: Sobre fragancias
+  - heading "¿Cuánto porcentaje de fragancia debo usar según mi cera?" [level=3]:
+    - link "¿Cuánto porcentaje de fragancia debo usar según mi cera?":
+      - /url: https://labsens.co/cuanto-porcentaje-de-fragancia-debo-usar-segun-mi-cera/
+  - link "Más información sobre ¿Cuánto porcentaje de fragancia debo usar según mi cera?":
+    - /url: https://labsens.co/cuanto-porcentaje-de-fragancia-debo-usar-segun-mi-cera/
+    - text: Leer más »
+  - link:
+    - /url: https://labsens.co/por-que-mi-vela-no-huele-al-encenderla/
+  - generic: Sobre fragancias
+  - heading "¿Por qué mi vela no huele al encenderla?" [level=3]:
+    - link "¿Por qué mi vela no huele al encenderla?":
+      - /url: https://labsens.co/por-que-mi-vela-no-huele-al-encenderla/
+  - link "Más información sobre ¿Por qué mi vela no huele al encenderla?":
+    - /url: https://labsens.co/por-que-mi-vela-no-huele-al-encenderla/
+    - text: Leer más »
+  - link:
+    - /url: https://labsens.co/top-5-fragancias-que-mas-gustan-en-colombia-este-ano/
+  - generic: Sobre fragancias
+  - heading "Top 5 fragancias que más gustan en Colombia este año" [level=3]:
+    - link "Top 5 fragancias que más gustan en Colombia este año":
+      - /url: https://labsens.co/top-5-fragancias-que-mas-gustan-en-colombia-este-ano/
+  - link "Más información sobre Top 5 fragancias que más gustan en Colombia este año":
+    - /url: https://labsens.co/top-5-fragancias-que-mas-gustan-en-colombia-este-ano/
+    - text: Leer más »
+  - link:
+    - /url: https://labsens.co/que-pabilo-usar-si-mi-vela-tiene-aditivos-o-esta-en-molde/
+  - generic: Sobre pabilos
+  - heading "¿Qué pabilo usar si mi vela tiene aditivos o está en molde?" [level=3]:
+    - link "¿Qué pabilo usar si mi vela tiene aditivos o está en molde?":
+      - /url: https://labsens.co/que-pabilo-usar-si-mi-vela-tiene-aditivos-o-esta-en-molde/
+  - link "Más información sobre ¿Qué pabilo usar si mi vela tiene aditivos o está en molde?":
+    - /url: https://labsens.co/que-pabilo-usar-si-mi-vela-tiene-aditivos-o-esta-en-molde/
+    - text: Leer más »
+  - link:
+    - /url: https://labsens.co/como-evitar-que-el-pabilo-se-apague-o-forme-un-tunel/
+  - generic: Sobre pabilos
+  - heading "Cómo evitar que el pabilo se apague o forme un túnel" [level=3]:
+    - link "Cómo evitar que el pabilo se apague o forme un túnel":
+      - /url: https://labsens.co/como-evitar-que-el-pabilo-se-apague-o-forme-un-tunel/
+  - link "Más información sobre Cómo evitar que el pabilo se apague o forme un túnel":
+    - /url: https://labsens.co/como-evitar-que-el-pabilo-se-apague-o-forme-un-tunel/
+    - text: Leer más »
+  - link:
+    - /url: https://labsens.co/como-elegir-el-pabilo-perfecto/
+  - generic: Sobre pabilos
+  - heading "Cómo elegir el pabilo perfecto" [level=3]:
+    - link "Cómo elegir el pabilo perfecto":
+      - /url: https://labsens.co/como-elegir-el-pabilo-perfecto/
+  - link "Más información sobre Cómo elegir el pabilo perfecto":
+    - /url: https://labsens.co/como-elegir-el-pabilo-perfecto/
+    - text: Leer más »
+  - link:
+    - /url: https://labsens.co/como-lograr-colores-intensos-en-tus-velas-sin-manchar-los-recipientes/
+  - generic: Sobre colorantes
+  - heading "Cómo lograr colores intensos en tus velas sin manchar los recipientes" [level=3]:
+    - link "Cómo lograr colores intensos en tus velas sin manchar los recipientes":
+      - /url: https://labsens.co/como-lograr-colores-intensos-en-tus-velas-sin-manchar-los-recipientes/
+  - link "Más información sobre Cómo lograr colores intensos en tus velas sin manchar los recipientes":
+    - /url: https://labsens.co/como-lograr-colores-intensos-en-tus-velas-sin-manchar-los-recipientes/
+    - text: Leer más »
+  - link:
+    - /url: https://labsens.co/por-que-se-decolora-mi-vela/
+  - generic: Sobre colorantes
+  - heading "¿Por qué se decolora mi vela?" [level=3]:
+    - link "¿Por qué se decolora mi vela?":
+      - /url: https://labsens.co/por-que-se-decolora-mi-vela/
+  - link "Más información sobre ¿Por qué se decolora mi vela?":
+    - /url: https://labsens.co/por-que-se-decolora-mi-vela/
+    - text: Leer más »
+  - link:
+    - /url: https://labsens.co/10-ideas-para-vender-velas-todo-el-ano-fuera-de-navidad/
+  - generic: Sobre emprendimiento
+  - heading "10 ideas para vender velas todo el año (fuera de Navidad)" [level=3]:
+    - link "10 ideas para vender velas todo el año (fuera de Navidad)":
+      - /url: https://labsens.co/10-ideas-para-vender-velas-todo-el-ano-fuera-de-navidad/
+  - link "Más información sobre 10 ideas para vender velas todo el año (fuera de Navidad)":
+    - /url: https://labsens.co/10-ideas-para-vender-velas-todo-el-ano-fuera-de-navidad/
+    - text: Leer más »
+  - link:
+    - /url: https://labsens.co/cera-de-vaso/
+  - generic: Sobre ceras
+  - heading "Cera de vaso" [level=3]:
+    - link "Cera de vaso":
+      - /url: https://labsens.co/cera-de-vaso/
+  - link "Más información sobre Cera de vaso":
+    - /url: https://labsens.co/cera-de-vaso/
+    - text: Leer más »
+  - link:
+    - /url: https://labsens.co/cera-de-soya-golden-wax-464/
+  - generic: Sobre ceras
+  - heading "Cera de soya Golden wax 464" [level=3]:
+    - link "Cera de soya Golden wax 464":
+      - /url: https://labsens.co/cera-de-soya-golden-wax-464/
+  - link "Más información sobre Cera de soya Golden wax 464":
+    - /url: https://labsens.co/cera-de-soya-golden-wax-464/
+    - text: Leer más »
+  - link:
+    - /url: https://labsens.co/cera-akosense/
+  - generic: Sobre ceras
+  - heading "Cera akosense" [level=3]:
+    - link "Cera akosense":
+      - /url: https://labsens.co/cera-akosense/
+  - link "Más información sobre Cera akosense":
+    - /url: https://labsens.co/cera-akosense/
+    - text: Leer más »
+  - link:
+    - /url: https://labsens.co/cera-de-palma/
+  - generic: Sobre ceras
+  - heading "Cera de palma" [level=3]:
+    - link "Cera de palma":
+      - /url: https://labsens.co/cera-de-palma/
+  - link "Más información sobre Cera de palma":
+    - /url: https://labsens.co/cera-de-palma/
+    - text: Leer más »
+  - link:
+    - /url: https://labsens.co/weissen/
+  - generic: Uncategorized
+  - heading "Weissen" [level=3]:
+    - link "Weissen":
+      - /url: https://labsens.co/weissen/
+  - link "Más información sobre Weissen":
+    - /url: https://labsens.co/weissen/
+    - text: Leer más »
+  - link:
+    - /url: https://labsens.co/colorantes/
+  - generic: Sobre colorantes
+  - heading "Colorantes" [level=3]:
+    - link "Colorantes":
+      - /url: https://labsens.co/colorantes/
+  - link "Más información sobre Colorantes":
+    - /url: https://labsens.co/colorantes/
+    - text: Leer más »
+- contentinfo:
+  - heading "Compra online" [level=2]
+  - navigation "Menú":
+    - list:
+      - link "Cera":
+        - /url: https://labsens.co/categoria-producto/cera/
+      - link "Parafinas":
+        - /url: https://labsens.co/categoria-producto/parafinas/
+      - link "Fragancias a base de agua":
+        - /url: https://labsens.co/categoria-producto/fragancias/fragancias-a-base-de-agua/
+      - link "Fragancias a base de aceite":
+        - /url: https://labsens.co/categoria-producto/fragancias/fragancias-a-base-de-aceite/
+      - link "Colorantes":
+        - /url: https://labsens.co/categoria-producto/colorantes/
+      - link "Envases":
+        - /url: https://labsens.co/categoria-producto/envases/
+      - link "Accesorios":
+        - /url: https://labsens.co/categoria-producto/accesorios/
+      - link "Aditivos":
+        - /url: https://labsens.co/categoria-producto/aditivos/
+  - heading "Nosotros" [level=2]
+  - navigation "Menú":
+    - list:
+      - link "Tips, guías y consejos":
+        - /url: https://labsens.co/aprende/
+      - link "Contacto":
+        - /url: https://labsens.co/contacto/
+  - heading "Legales" [level=2]
+  - navigation "Menú":
+    - list:
+      - link "Políticas de calidad":
+        - /url: https://labsens.co/politicas-de-calidad/
+      - link "Política de reclamaciones":
+        - /url: https://labsens.co/politica-de-reclamaciones-y-reposicion-de-producto/
+      - link "Tratamiento de datos – Proveedores":
+        - /url: https://labsens.co/wp-content/uploads/2025/07/TRATAMIENTOS-DE-DATOS-PERSONALES-PROVEEDORES.pdf
+      - link "Tratamiento de datos – Clientes":
+        - /url: https://labsens.co/wp-content/uploads/2025/07/POLITICA-DE-TRATAMIENTO-DE-DATOS-PARA-CLIENTES.pdf
+      - link "Términos y Condiciones":
+        - /url: https://labsens.co/terminos-y-condiciones/
+      - link "Política de Privacidad":
+        - /url: https://labsens.co/politica-de-privacidad/
+      - link "Política de Eliminación de Datos":
+        - /url: https://labsens.co/politica-de-eliminacion-de-datos/
+  - heading "Síguenos" [level=2]
+  - list:
+    - link "Instagram":
+      - /url: https://www.instagram.com/labsens.co/
+      - generic: Instagram
+    - link "Youtube":
+      - /url: https://www.youtube.com/channel/UCn3JoUrQBD4lVF2fLIfUhYw/videos
+      - generic: Youtube
+    - link "Facebook":
+      - /url: https://www.facebook.com/Labsens.cijyj/
+      - generic: Facebook
+  - paragraph:
+    - strong: C I J Y J DISTRIBUCIONES S A S
+    - text: NIT 8305082619
+    - text: 79 SUR 101 BG 108, CARRERA 50
+    - text: LA ESTRELLA, Antioquia
+  - text: © Copyright 2026 LabSens – Sitio creado por
+  - link "Pardolikeme":
+    - /url: https://pardolikeme.co
+  - paragraph: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.
+- dialog:
+  - text: 
+  - button "Alternar Elemento flotante":
+- generic: desktop
+- status

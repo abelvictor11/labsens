@@ -1,0 +1,165 @@
+[
+  {
+    "path": "snippets/view-transition-opt-in.liquid",
+    "offenses": [
+      {
+        "check": "RemoteAsset",
+        "severity": "warning",
+        "start_row": 18,
+        "start_column": 4,
+        "end_row": 18,
+        "end_column": 23,
+        "message": "Use one of the asset_url filters to serve assets for better performance."
+      }
+    ],
+    "errorCount": 0,
+    "warningCount": 1,
+    "infoCount": 0
+  },
+  {
+    "path": "snippets/bento-grid.liquid",
+    "offenses": [
+      {
+        "check": "UnclosedHTMLElement",
+        "severity": "warning",
+        "start_row": 41,
+        "start_column": 4,
+        "end_row": 44,
+        "end_column": 5,
+        "message": "Opening tag does not have a matching closing tag for condition `forloop['first'] or item_modulo == 1` in LiquidBranch 'LiquidBranch'"
+      },
+      {
+        "check": "UnclosedHTMLElement",
+        "severity": "warning",
+        "start_row": 52,
+        "start_column": 4,
+        "end_row": 52,
+        "end_column": 10,
+        "message": "Closing tag does not have a matching opening tag for condition `forloop['last'] or item_modulo == 0` in LiquidBranch 'LiquidBranch'"
+      }
+    ],
+    "errorCount": 0,
+    "warningCount": 2,
+    "infoCount": 0
+  },
+  {
+    "path": "sections/product-list.liquid",
+    "offenses": [
+      {
+        "check": "UniqueStaticBlockId",
+        "severity": "error",
+        "start_row": 54,
+        "start_column": 63,
+        "end_row": 54,
+        "end_column": 84,
+        "message": "The id 'static-product-card' is already being used by another static block"
+      }
+    ],
+    "errorCount": 1,
+    "warningCount": 0,
+    "infoCount": 0
+  },
+  {
+    "path": "sections/main-cart.liquid",
+    "offenses": [
+      {
+        "check": "UniqueStaticBlockId",
+        "severity": "error",
+        "start_row": 44,
+        "start_column": 37,
+        "end_row": 44,
+        "end_column": 54,
+        "message": "The id 'cart-page-title' is already being used by another static block"
+      },
+      {
+        "check": "UniqueStaticBlockId",
+        "severity": "error",
+        "start_row": 48,
+        "start_column": 37,
+        "end_row": 48,
+        "end_column": 54,
+        "message": "The id 'cart-page-items' is already being used by another static block"
+      }
+    ],
+    "errorCount": 2,
+    "warningCount": 0,
+    "infoCount": 0
+  },
+  {
+    "path": "sections/collection-links.liquid",
+    "offenses": [
+      {
+        "check": "UniqueStaticBlockId",
+        "severity": "error",
+        "start_row": 80,
+        "start_column": 18,
+        "end_row": 80,
+        "end_column": 24,
+        "message": "The id 'link' is already being used by another static block"
+      }
+    ],
+    "errorCount": 1,
+    "warningCount": 0,
+    "infoCount": 0
+  },
+  {
+    "path": "sections/header.liquid",
+    "offenses": [
+      {
+        "check": "UniqueStaticBlockId",
+        "severity": "error",
+        "start_row": 89,
+        "start_column": 51,
+        "end_row": 89,
+        "end_column": 64,
+        "message": "The id 'header-menu' is already being used by another static block"
+      },
+      {
+        "check": "UniqueStaticBlockId",
+        "severity": "error",
+        "start_row": 93,
+        "start_column": 51,
+        "end_row": 93,
+        "end_column": 64,
+        "message": "The id 'header-menu' is already being used by another static block"
+      }
+    ],
+    "errorCount": 2,
+    "warningCount": 0,
+    "infoCount": 0
+  },
+  {
+    "path": "blocks/disclosures.liquid",
+    "offenses": [
+      {
+        "check": "UnknownFilter",
+        "severity": "error",
+        "start_row": 0,
+        "start_column": 77,
+        "end_row": 0,
+        "end_column": 101,
+        "message": "Unknown filter 'applicable_disclosures' used."
+      }
+    ],
+    "errorCount": 1,
+    "warningCount": 0,
+    "infoCount": 0
+  },
+  {
+    "path": "snippets/cart-disclosure-tooltip.liquid",
+    "offenses": [
+      {
+        "check": "UnknownFilter",
+        "severity": "error",
+        "start_row": 27,
+        "start_column": 69,
+        "end_row": 27,
+        "end_column": 93,
+        "message": "Unknown filter 'applicable_disclosures' used."
+      }
+    ],
+    "errorCount": 1,
+    "warningCount": 0,
+    "infoCount": 0
+  }
+]
