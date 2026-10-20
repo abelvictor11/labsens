@@ -1,0 +1,60 @@
+{{ 'labsens-home.css' | asset_url | stylesheet_tag }}
+<div class="labsens-home-categories labsens-global">
+<h2>{{ section.settings.heading | escape }}</h2><div class="labsens-home-categories__grid">
+{% for block in section.blocks %}<div {{ block.shopify_attributes }}>
+<a href="{{ block.settings.url }}">{% render 'labsens-home-image', item: block.settings %}</a>
+<h3><a href="{{ block.settings.url }}">{{ block.settings.title | escape }}</a></h3>
+</div>{% endfor %}</div></div>
+{% schema %}
+{
+  "name": "Labsens · Categorías",
+  "tag": "section",
+  "class": "labsens-home-section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Título",
+      "default": "Compra por categorías"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Labsens · Categorías"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "category",
+      "name": "Categoría",
+      "settings": [
+        {
+          "type": "text",
+          "id": "title",
+          "label": "Título"
+        },
+        {
+          "type": "url",
+          "id": "url",
+          "label": "Enlace"
+        },
+        {
+          "type": "image_picker",
+          "id": "image",
+          "label": "Imagen"
+        },
+        {
+          "type": "text",
+          "id": "asset",
+          "label": "Archivo original del tema"
+        },
+        {
+          "type": "text",
+          "id": "alt",
+          "label": "Descripción de imagen"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

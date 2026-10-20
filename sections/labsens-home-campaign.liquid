@@ -1,0 +1,37 @@
+{{ 'labsens-home.css' | asset_url | stylesheet_tag }}
+<div class="labsens-home-campaign labsens-global{% if section.settings.roomy %} labsens-home-campaign--roomy{% endif %}{% if section.settings.narrow %} labsens-home-campaign--narrow{% endif %}">
+<h2>{{ section.settings.heading | escape | newline_to_br }}</h2>
+{% if section.settings.collection != blank and section.settings.collection.products_count > 0 %}<div class="labsens-home-products">
+{% for product in section.settings.collection.products limit: 4 %}<a href="{{ product.url }}">{% if product.featured_image != blank %}{{ product.featured_image | image_url: width: 600 | image_tag: loading: 'lazy', widths: '300, 600', sizes: '(min-width: 768px) 25vw, 50vw' }}{% endif %}<h3>{{ product.title | escape }}</h3><span>{{ product.price | money }}</span></a>{% endfor %}
+</div>{% endif %}</div>
+{% schema %}
+{
+  "name": "Labsens · Campaña",
+  "tag": "section",
+  "class": "labsens-home-section",
+  "settings": [{"type":"checkbox","id":"roomy","label":"Espaciado móvil de campaña","default":false},
+    {
+      "type": "textarea",
+      "id": "heading",
+      "label": "Título",
+      "default": "Campaña"
+    },
+    {
+      "type": "collection",
+      "id": "collection",
+      "label": "Colección"
+    },
+    {
+      "type": "checkbox",
+      "id": "narrow",
+      "label": "Título de ancho reducido",
+      "default": false
+    }
+  ],
+  "presets": [
+    {
+      "name": "Labsens · Campaña"
+    }
+  ]
+}
+{% endschema %}

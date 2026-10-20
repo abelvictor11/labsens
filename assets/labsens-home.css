@@ -1,0 +1,59 @@
+.labsens-home-section{background:var(--labsens-paper);color:var(--labsens-ink)}
+.labsens-home-section h2{font-size:30px;font-weight:700;line-height:1;margin:0;text-align:center;letter-spacing:normal;text-transform:none}
+.labsens-home-section h3{letter-spacing:normal;text-transform:none}
+.labsens-home-section img{display:block;width:100%;height:auto}
+.labsens-home-hero{display:block;position:relative}
+.labsens-home-hero__slide{height:500px}
+.labsens-home-hero__slide[hidden]{display:none}
+.labsens-home-hero__slide a,.labsens-home-hero__slide picture{display:block;height:100%}
+.labsens-home-hero__slide img{width:100%;height:100%;object-fit:cover;object-position:center}
+.labsens-home-hero button{border:0;cursor:pointer}
+.labsens-home-hero__prev,.labsens-home-hero__next{position:absolute;top:45%;background:transparent;color:#fff;font-size:42px;padding:0 12px;line-height:1}
+.labsens-home-hero__prev{left:0}.labsens-home-hero__next{right:0}
+.labsens-home-hero__dots{position:absolute;bottom:12px;left:50%;transform:translateX(-50%);display:flex;gap:8px}
+.labsens-home-hero__dots button{width:7px;height:7px;border-radius:50%;padding:0;background:#31313155}
+.labsens-home-hero__dots button[aria-pressed=true]{background:var(--labsens-ink)}
+.labsens-home-hero__pause{position:absolute;bottom:8px;right:14px;background:#faf7eacc;color:var(--labsens-ink);border-radius:3px;font-size:12px;width:26px;height:26px}
+.labsens-home-categories{padding-top:70px}
+.labsens-home-categories>h2{margin-bottom:20px}
+.labsens-home-categories__grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:10px}
+.labsens-home-categories__grid img{aspect-ratio:333/443;object-fit:cover}
+.labsens-home-categories h3{text-align:center;font-size:18px;font-weight:600;line-height:18px;margin:20px 0 0}
+.labsens-home-campaign{padding:10px;margin:50px 0 0}
+.labsens-home-campaign--narrow{padding:20px 10px}
+.labsens-home-campaign--narrow h2{max-width:610px;margin:auto}
+.labsens-home-products{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px;margin-top:30px}
+.labsens-home-products h3{font-size:18px;margin:15px 0 5px}
+.labsens-home-kits{margin:50px 10px 0;padding:10px 0;display:grid;grid-template-columns:2fr 1fr;height:459px}
+.labsens-home-kits__image img{height:100%;object-fit:cover}
+.labsens-home-kits__text{background:var(--labsens-peach);padding:40px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:20px}
+.labsens-home-kits__text p{font-size:16px;line-height:24px;margin:0 0 16px}
+.labsens-home-kits__text>a{border:1px solid var(--labsens-ink);border-radius:2px;padding:10px 24px;font-size:18px;font-weight:600;line-height:22px}
+.labsens-home-brands{width:calc(70% - 14px);margin:50px auto 0;padding:10px 0 20px}
+.labsens-home-brands>div{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:20px;margin-top:30px;padding:0 10px}
+.labsens-home-brands img{border-radius:20px;aspect-ratio:269/135;object-fit:contain}
+.labsens-home-resources{padding:10px 10px 20px;margin-top:50px}
+.labsens-home-resources__grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:25px;margin-top:20px}
+.labsens-home-resources article{background:white;box-shadow:0 0 10px #0002;border-radius:3px;overflow:hidden}
+.labsens-home-resources__image{display:block;position:relative;overflow:hidden}
+.labsens-home-resources__image img{aspect-ratio:1;object-fit:cover}
+.labsens-home-resources__image span{position:absolute;top:20px;right:20px;border-radius:20px;background:var(--labsens-peach);padding:5px 12px;text-transform:uppercase;font-size:12px;line-height:18px}
+.labsens-home-resources__text{padding:20px 30px 30px}
+.labsens-home-resources__text h3{font-size:21px;line-height:1.2;font-weight:700;margin:0 0 20px}
+.labsens-home-resources__more{font-size:12px;font-weight:700;text-transform:uppercase}
+@media(max-width:767px){
+.labsens-home-hero__slide{height:365px}
+.labsens-home-categories__grid{grid-template-columns:repeat(2,minmax(0,1fr));column-gap:4%;row-gap:10px}
+.labsens-home-campaign--roomy{padding-block:25px}
+.labsens-home-campaign h2{max-width:100%;margin:auto}
+.labsens-home-kits{margin:50px 5px 0;padding:5px 0;grid-template-columns:1fr;height:auto;min-height:0}
+.labsens-home-kits__image{height:223px}
+.labsens-home-kits__text{padding:20px;gap:20px}
+.labsens-home-kits__text h2{font-size:20px}
+.labsens-home-kits__text p{margin:0;font-size:14px;line-height:21px}
+.labsens-home-kits__text>a{font-size:16px;line-height:20px;padding:10px 24px}
+.labsens-home-brands{width:auto;margin:50px 10px 0;padding:10px 0}
+.labsens-home-brands>div{grid-template-columns:repeat(2,minmax(0,1fr));margin-top:20px;gap:20px;padding:0 10px}
+.labsens-home-resources__grid{grid-template-columns:1fr}
+.labsens-home-products{grid-template-columns:repeat(2,minmax(0,1fr))}
+}

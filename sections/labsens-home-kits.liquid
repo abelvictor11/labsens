@@ -1,0 +1,54 @@
+{{ 'labsens-home.css' | asset_url | stylesheet_tag }}
+<div class="labsens-home-kits labsens-global"><div class="labsens-home-kits__image">{% render 'labsens-home-image', item: section.settings %}</div><div class="labsens-home-kits__text"><h2>{{ section.settings.heading | escape }}</h2><p>{{ section.settings.text | escape }}</p><a href="{{ section.settings.url }}">{{ section.settings.button | escape }}</a></div></div>
+{% schema %}
+{
+  "name": "Labsens · Banner kits",
+  "tag": "section",
+  "class": "labsens-home-section",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "image",
+      "label": "Imagen"
+    },
+    {
+      "type": "text",
+      "id": "asset",
+      "label": "Archivo original del tema"
+    },
+    {
+      "type": "text",
+      "id": "alt",
+      "label": "Descripción de imagen"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Título",
+      "default": "¿Nuevo en el mundo de las velas?"
+    },
+    {
+      "type": "textarea",
+      "id": "text",
+      "label": "Texto",
+      "default": "Nuestros kits incluyen todo lo que necesitas para empezar con éxito."
+    },
+    {
+      "type": "text",
+      "id": "button",
+      "label": "Botón",
+      "default": "Comienza tu viaje aquí"
+    },
+    {
+      "type": "url",
+      "id": "url",
+      "label": "Enlace"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Labsens · Banner kits"
+    }
+  ]
+}
+{% endschema %}

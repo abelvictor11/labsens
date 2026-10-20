@@ -1,0 +1,10 @@
+{% doc %}
+  @param {object} item - Ajustes de imagen
+  @param {string} [loading] - Prioridad de carga
+{% enddoc %}
+{% assign loading = loading | default: 'lazy' %}
+{% if item.image != blank %}
+  {{ item.image | image_url: width: 2400 | image_tag: widths: '400, 800, 1200, 1800, 2400', sizes: '100vw', loading: loading, alt: item.alt }}
+{% elsif item.asset != blank %}
+  <img src="{{ item.asset | asset_url }}" alt="{{ item.alt | escape }}" loading="{{ loading }}" width="1280" height="720">
+{% endif %}
