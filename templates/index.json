@@ -43,7 +43,7 @@
             "asset": "labsens-home-Ceras_Labsens.jpg",
             "alt": "Ceras",
             "title": "Ceras",
-            "url": "https://labsens.co/categoria-producto/cera/"
+            "url": "/collections/cera"
           }
         },
         "1": {
@@ -52,7 +52,7 @@
             "asset": "labsens-home-Envases_LabSens.jpg",
             "alt": "Envases",
             "title": "Envases",
-            "url": "https://labsens.co/categoria-producto/envases/"
+            "url": "/collections/envases"
           }
         },
         "2": {
@@ -61,7 +61,7 @@
             "asset": "labsens-home-Colorantes_LabSens.jpg",
             "alt": "Colorantes",
             "title": "Colorantes",
-            "url": "https://labsens.co/categoria-producto/colorantes/"
+            "url": "/collections/colorantes"
           }
         },
         "3": {
@@ -70,7 +70,7 @@
             "asset": "labsens-home-Fragancias_Labsens.jpg",
             "alt": "Fragancias",
             "title": "Fragancias",
-            "url": "https://labsens.co/categoria-producto/fragancias/"
+            "url": "/collections/fragancias"
           }
         },
         "4": {
@@ -79,7 +79,7 @@
             "asset": "labsens-home-Parafinas_Labsens.jpg",
             "alt": "Pabilos",
             "title": "Pabilos",
-            "url": "https://labsens.co/categoria-producto/pabilos/"
+            "url": "/collections/pabilos"
           }
         },
         "5": {
@@ -88,7 +88,7 @@
             "asset": "labsens-home-Accesorios_Labsens.jpg",
             "alt": "Accesorios",
             "title": "Accesorios",
-            "url": "https://labsens.co/categoria-producto/accesorios/"
+            "url": "/collections/accesorios"
           }
         }
       },
@@ -131,7 +131,7 @@
         "heading": "¿Nuevo en el mundo de las velas?",
         "text": "Nuestros kits incluyen todo lo que necesitas para empezar con éxito.",
         "button": "Comienza tu viaje aquí",
-        "url": "https://labsens.co/tienda/"
+        "url": "/collections/all"
       }
     },
     "brands": {

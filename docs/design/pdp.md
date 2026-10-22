@@ -21,7 +21,7 @@ Referencia: captura de Porta mechas suministrada por el cliente.
 
 ## Pendientes del piloto, fuera del ajuste visual
 
-- Resolver la importación de Colorante Amarillo, Cera de Vaso y Cera Akosense: seis productos preparados, tres presentes en Admin.
-- Completar propiedades, notas olfativas limpias y trazabilidad de variantes del piloto.
+- Resuelto el 22 de octubre: catálogo completo de 121 productos importado; el nombre Cantidad / Tamaño se normalizó a Presentación.
+- Completados propiedades, notas olfativas limpias y trazabilidad de variantes para el catálogo completo.
 - Afinar los pictogramas de beneficios con los recursos originales: los actuales son SVG aproximados.
-- Los enlaces globales aún apuntan a WordPress hasta migrar las colecciones y páginas correspondientes.
+- Enlaces de categorías ya migrados a colecciones Shopify; páginas legales y blog conservan sus destinos WordPress hasta su migración.

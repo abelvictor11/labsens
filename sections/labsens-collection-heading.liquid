@@ -1,0 +1,5 @@
+{{ 'labsens-collection.css' | asset_url | stylesheet_tag }}
+<div class="labsens-collection-heading labsens-global"><h1>{{ section.settings.heading | default: collection.title | escape }}</h1>{% if section.settings.show_description and collection.description != blank %}<div class="rte">{{ collection.description }}</div>{% endif %}</div>
+{% schema %}
+{"name":"Labsens · Título catálogo","settings":[{"type":"text","id":"heading","label":"Título","info":"Vacío para mostrar el nombre de la colección."},{"type":"checkbox","id":"show_description","label":"Mostrar descripción","default":false}],"presets":[{"name":"Labsens · Título catálogo"}]}
+{% endschema %}

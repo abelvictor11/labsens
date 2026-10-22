@@ -1,0 +1,48 @@
+{{ 'labsens-collection.css' | asset_url | stylesheet_tag }}
+<div class="labsens-collection labsens-global">
+  {% if section.blocks.size > 0 %}
+    <aside class="labsens-collection__sidebar">
+      <h2>{{ section.settings.sidebar_heading | escape }}</h2>
+      <nav aria-label="{{ section.settings.categories_heading | escape }}">
+        <h3>{{ section.settings.categories_heading | escape }}</h3>
+        <ul>
+          {% for block in section.blocks %}
+            {% assign category = block.settings.collection %}
+            {% if category != blank %}
+              <li {{ block.shopify_attributes }}>
+                {% if block.settings.children != blank %}<details {% if collection.handle == category.handle %}open{% else %}{% for child in block.settings.children %}{% if child.handle == collection.handle %}open{% endif %}{% endfor %}{% endif %}><summary>{{ block.settings.label | default: category.title | escape }}</summary><ul><li><a href="{{ category.url }}" {% if collection.handle == category.handle %}aria-current="page"{% endif %}><span class="labsens-collection__square" aria-hidden="true"></span>{{ section.settings.all_label | escape }}</a></li>{% for child in block.settings.children %}<li><a href="{{ child.url }}" {% if collection.handle == child.handle %}aria-current="page"{% endif %}><span class="labsens-collection__square" aria-hidden="true"></span>{{ child.title | escape }}</a></li>{% endfor %}</ul></details>
+                {% else %}<a href="{{ category.url }}" {% if collection.handle == category.handle %}aria-current="page"{% endif %}><span class="labsens-collection__square" aria-hidden="true"></span>{{ block.settings.label | default: category.title | escape }}</a>{% endif %}
+              </li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      </nav>
+    </aside>
+  {% endif %}
+  <div class="labsens-collection__results">
+    {% paginate collection.products by section.settings.products_per_page %}
+      <div class="labsens-collection__grid">
+        {% for product in collection.products %}
+          <article class="labsens-collection-card">
+            <a class="labsens-collection-card__image" href="{{ product.url }}" aria-label="{{ product.title | escape }}">
+              {% if product.featured_image %}{{ product.featured_image | image_url: width: 1000 | image_tag: loading: 'lazy', widths: '300, 500, 750, 1000', sizes: '(max-width: 749px) calc(100vw - 40px), 24vw' }}{% else %}{{ 'product-1' | placeholder_svg_tag }}{% endif %}
+            </a>
+            <div class="labsens-collection-card__caption">
+              {% if section.settings.show_category %}
+                {% assign type_handle = product.type | handleize %}
+                {% assign type_collection = collections[type_handle] %}
+                <a class="labsens-collection-card__category" href="{{ type_collection.url | default: collection.url }}">{{ product.type | default: collection.title | escape }}</a>
+              {% endif %}
+              <h2><a href="{{ product.url }}">{{ product.title | escape }}</a></h2>
+              <p class="labsens-collection-card__price">{{ product.price_min | money_without_trailing_zeros }}{% if product.price_varies %} – {{ product.price_max | money_without_trailing_zeros }}{% endif %}</p>
+            </div>
+          </article>
+        {% else %}<p class="labsens-collection__empty">{{ section.settings.empty_text | escape }}</p>{% endfor %}
+      </div>
+      {% if paginate.pages > 1 %}<nav class="labsens-collection__pagination" aria-label="{{ section.settings.pagination_label | escape }}">{{ paginate | default_pagination: next: '→', previous: '←' }}</nav>{% endif %}
+    {% endpaginate %}
+  </div>
+</div>
+{% schema %}
+{"name":"Labsens · Colección","settings":[{"type":"text","id":"sidebar_heading","label":"Encabezado lateral","default":"Filtrar por:"},{"type":"text","id":"categories_heading","label":"Título categorías","default":"Categorías"},{"type":"text","id":"all_label","label":"Enlace a categoría principal","default":"Ver todas"},{"type":"range","id":"products_per_page","label":"Productos por página","min":6,"max":48,"step":3,"default":12},{"type":"checkbox","id":"show_category","label":"Mostrar categoría en tarjetas","default":true},{"type":"text","id":"empty_text","label":"Mensaje colección vacía","default":"No se encontraron productos en esta colección."},{"type":"text","id":"pagination_label","label":"Etiqueta de paginación","default":"Páginas de productos"}],"blocks":[{"type":"category","name":"Categoría","settings":[{"type":"collection","id":"collection","label":"Colección"},{"type":"text","id":"label","label":"Nombre personalizado"},{"type":"collection_list","id":"children","label":"Subcategorías"}]}],"presets":[{"name":"Labsens · Colección"}]}
+{% endschema %}

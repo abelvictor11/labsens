@@ -17,7 +17,7 @@
           "type": "column",
           "settings": {
             "heading": "Compra online",
-            "links": "<p><a href=\"https://labsens.co/categoria-producto/cera/\">Cera</a></p><p><a href=\"https://labsens.co/categoria-producto/parafinas/\">Parafinas</a></p><p><a href=\"https://labsens.co/categoria-producto/fragancias/fragancias-a-base-de-agua/\">Fragancias a base de agua</a></p><p><a href=\"https://labsens.co/categoria-producto/fragancias/fragancias-a-base-de-aceite/\">Fragancias a base de aceite</a></p><p><a href=\"https://labsens.co/categoria-producto/colorantes/\">Colorantes</a></p><p><a href=\"https://labsens.co/categoria-producto/envases/\">Envases</a></p><p><a href=\"https://labsens.co/categoria-producto/accesorios/\">Accesorios</a></p><p><a href=\"https://labsens.co/categoria-producto/aditivos/\">Aditivos</a></p>"
+            "links": "<p><a href=\"/collections/cera\">Cera</a></p><p><a href=\"/collections/parafinas\">Parafinas</a></p><p><a href=\"/collections/fragancias-a-base-de-agua\">Fragancias a base de agua</a></p><p><a href=\"/collections/fragancias-a-base-de-aceite\">Fragancias a base de aceite</a></p><p><a href=\"/collections/colorantes\">Colorantes</a></p><p><a href=\"/collections/envases\">Envases</a></p><p><a href=\"/collections/accesorios\">Accesorios</a></p><p><a href=\"/collections/aditivos\">Aditivos</a></p>"
           }
         },
         "column_1": {
