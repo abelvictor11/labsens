@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "type": "header",
   "name": "Header",
@@ -12,60 +21,60 @@
           "type": "link",
           "settings": {
             "label": "Cera",
-            "url": "https://labsens.co/categoria-producto/cera/"
+            "url": "/collections/cera"
           }
         },
         "link_1": {
           "type": "link",
           "settings": {
             "label": "Fragancias",
-            "url": "https://labsens.co/categoria-producto/fragancias/",
+            "url": "/collections/fragancias",
             "child_label_1": "Fragancias a base de aceite",
-            "child_url_1": "https://labsens.co/categoria-producto/fragancias/fragancias-a-base-de-aceite/",
+            "child_url_1": "/collections/fragancias-a-base-de-aceite",
             "child_label_2": "Fragancias a base de agua",
-            "child_url_2": "https://labsens.co/categoria-producto/fragancias/fragancias-a-base-de-agua/"
+            "child_url_2": "/collections/fragancias-a-base-de-agua"
           }
         },
         "link_2": {
           "type": "link",
           "settings": {
             "label": "Colorantes",
-            "url": "https://labsens.co/categoria-producto/colorantes/"
+            "url": "/collections/colorantes"
           }
         },
         "link_3": {
           "type": "link",
           "settings": {
             "label": "Envases",
-            "url": "https://labsens.co/categoria-producto/envases/"
+            "url": "/collections/envases"
           }
         },
         "link_4": {
           "type": "link",
           "settings": {
             "label": "Pabilos",
-            "url": "https://labsens.co/categoria-producto/pabilos/"
+            "url": "/collections/pabilos"
           }
         },
         "link_5": {
           "type": "link",
           "settings": {
             "label": "Accesorios",
-            "url": "https://labsens.co/categoria-producto/accesorios/"
+            "url": "/collections/accesorios"
           }
         },
         "link_6": {
           "type": "link",
           "settings": {
             "label": "Aditivos",
-            "url": "https://labsens.co/categoria-producto/aditivos/"
+            "url": "/collections/aditivos"
           }
         },
         "link_7": {
           "type": "link",
           "settings": {
             "label": "Todos los productos",
-            "url": "https://labsens.co/tienda/"
+            "url": "/collections/all"
           }
         },
         "link_8": {
