@@ -1,0 +1,86 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "labsens-product",
+      "blocks": {
+        "block_0": {
+          "type": "title",
+          "settings": {}
+        },
+        "block_1": {
+          "type": "price",
+          "settings": {}
+        },
+        "block_2": {
+          "type": "description",
+          "settings": {}
+        },
+        "block_3": {
+          "type": "technical",
+          "settings": {
+            "heading": "Propiedades",
+            "content": "properties"
+          }
+        },
+        "block_4": {
+          "type": "technical",
+          "settings": {
+            "heading": "Recomendaciones",
+            "content": "recommendations"
+          }
+        },
+        "block_5": {
+          "type": "technical",
+          "settings": {
+            "heading": "Modos de uso",
+            "content": "usage"
+          }
+        },
+        "block_6": {
+          "type": "technical",
+          "settings": {
+            "heading": "Notas olfativas",
+            "content": "notes"
+          }
+        },
+        "block_7": {
+          "type": "benefits",
+          "settings": {}
+        },
+        "block_8": {
+          "type": "whatsapp",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "block_0",
+        "block_1",
+        "block_2",
+        "block_3",
+        "block_4",
+        "block_5",
+        "block_6",
+        "block_7",
+        "block_8"
+      ],
+      "settings": {}
+    },
+    "related": {
+      "type": "labsens-related-products",
+      "settings": {}
+    }
+  },
+  "order": [
+    "main",
+    "related"
+  ]
+}
