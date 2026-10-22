@@ -1,16 +1,28 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
       "type": "labsens-product",
       "blocks": {
         "block_0": {
-          "type": "title"
+          "type": "title",
+          "settings": {}
         },
         "block_1": {
-          "type": "price"
+          "type": "price",
+          "settings": {}
         },
         "block_2": {
-          "type": "description"
+          "type": "description",
+          "settings": {}
         },
         "block_3": {
           "type": "technical",
@@ -41,10 +53,12 @@
           }
         },
         "block_7": {
-          "type": "benefits"
+          "type": "benefits",
+          "settings": {}
         },
         "block_8": {
-          "type": "whatsapp"
+          "type": "whatsapp",
+          "settings": {}
         }
       },
       "block_order": [
