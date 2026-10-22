@@ -1,0 +1,72 @@
+{
+  "sections": {
+    "main": {
+      "type": "labsens-product",
+      "blocks": {
+        "block_0": {
+          "type": "title"
+        },
+        "block_1": {
+          "type": "price"
+        },
+        "block_2": {
+          "type": "description"
+        },
+        "block_3": {
+          "type": "technical",
+          "settings": {
+            "heading": "Propiedades",
+            "content": "properties"
+          }
+        },
+        "block_4": {
+          "type": "technical",
+          "settings": {
+            "heading": "Recomendaciones",
+            "content": "recommendations"
+          }
+        },
+        "block_5": {
+          "type": "technical",
+          "settings": {
+            "heading": "Modos de uso",
+            "content": "usage"
+          }
+        },
+        "block_6": {
+          "type": "technical",
+          "settings": {
+            "heading": "Notas olfativas",
+            "content": "notes"
+          }
+        },
+        "block_7": {
+          "type": "benefits"
+        },
+        "block_8": {
+          "type": "whatsapp"
+        }
+      },
+      "block_order": [
+        "block_0",
+        "block_1",
+        "block_2",
+        "block_3",
+        "block_4",
+        "block_5",
+        "block_6",
+        "block_7",
+        "block_8"
+      ],
+      "settings": {}
+    },
+    "related": {
+      "type": "labsens-related-products",
+      "settings": {}
+    }
+  },
+  "order": [
+    "main",
+    "related"
+  ]
+}

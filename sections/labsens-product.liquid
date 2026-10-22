@@ -1,0 +1,154 @@
+{% liquid
+  assign profile_handle = product.type | handleize
+  assign profile = shop.metaobjects.labsens_product_type_profile[profile_handle]
+  unless profile.tipo_de_producto.value == product.type
+    assign profile = nil
+  endunless
+  assign recommendations = product.metafields.labsens.recommendations_guide.value
+  if recommendations == blank
+    assign recommendations = profile.recomendaciones.value
+  endif
+  assign usage = product.metafields.labsens.usage_guide.value
+  if usage == blank
+    assign usage = profile.modo_de_uso.value
+  endif
+  capture whatsapp_message
+    echo section.settings.message
+    echo ' '
+    echo product.title
+    echo ' — '
+    echo shop.url
+    echo product.url
+  endcapture
+%}
+<section class="labsens-product labsens-global" aria-labelledby="ProductTitle-{{ section.id }}">
+  <div class="labsens-product__media">
+    <div class="labsens-product__gallery">
+      {% for media in product.media %}
+        {% if media.media_type == 'image' %}
+          <div id="ProductImage-{{ section.id }}-{{ media.id }}" class="labsens-product__slide">
+            {% if forloop.first %}
+              {{ media.preview_image | image_url: width: 1400 | image_tag: widths: '400, 600, 800, 1000, 1400', sizes: '(min-width: 750px) 33vw, 100vw', loading: 'eager' }}
+            {% else %}
+              {{ media.preview_image | image_url: width: 1400 | image_tag: widths: '400, 600, 800, 1000, 1400', sizes: '(min-width: 750px) 33vw, 100vw', loading: 'lazy' }}
+            {% endif %}
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+    {% if product.images.size > 1 %}
+      <nav class="labsens-product__thumbnails" aria-label="{{ section.settings.gallery_label | escape }}">
+        {% for media in product.media %}
+          {% if media.media_type == 'image' %}
+            <a href="#ProductImage-{{ section.id }}-{{ media.id }}" aria-label="{{ section.settings.image_label | escape }} {{ forloop.index }}">
+              {{ media.preview_image | image_url: width: 120 | image_tag: loading: 'lazy', alt: '' }}
+            </a>
+          {% endif %}
+        {% endfor %}
+      </nav>
+    {% endif %}
+  </div>
+  <div class="labsens-product__information">
+    {% for block in section.blocks %}
+      {% case block.type %}
+        {% when 'title' %}
+          <h1 id="ProductTitle-{{ section.id }}" {{ block.shopify_attributes }}>{{ product.title | escape }}</h1>
+        {% when 'price' %}
+          <p class="labsens-product__price" {{ block.shopify_attributes }}>
+            {{ product.price_min | money_without_trailing_zeros }}{% if product.price_varies %} – {{ product.price_max | money_without_trailing_zeros }}{% endif %}
+          </p>
+        {% when 'description' %}
+          {% if product.description != blank %}<div class="labsens-product__description rte" {{ block.shopify_attributes }}>{{ product.description }}</div>{% endif %}
+        {% when 'technical' %}
+          {% liquid
+            assign field = nil
+            case block.settings.content
+              when 'properties'
+                assign field = product.metafields.labsens.properties
+              when 'recommendations'
+                unless product.metafields.labsens.hide_recommendations.value == true
+                  assign field = recommendations.contenido
+                endunless
+              when 'usage'
+                unless product.metafields.labsens.hide_usage.value == true
+                  assign field = usage.contenido
+                endunless
+              when 'notes'
+                assign field = product.metafields.labsens.olfactory_notes
+            endcase
+          %}
+          {% if field.value != blank %}
+            <details class="labsens-product__detail" {% if block.settings.open %}open{% endif %} {{ block.shopify_attributes }}>
+              <summary>{{ block.settings.heading | escape }}<span aria-hidden="true">⌄</span></summary>
+              <div class="labsens-product__technical rte">{{ field | metafield_tag }}</div>
+            </details>
+          {% endif %}
+        {% when 'benefits' %}
+          <div class="labsens-product__benefits" {{ block.shopify_attributes }}>
+            <div><svg aria-hidden="true" viewBox="0 0 32 32" fill="none" stroke="currentColor"><path d="M2 7h17v17H2zM19 13h6l5 6v5H19M3 12h10M0 17h9"/><circle cx="8" cy="25" r="3"/><circle cx="24" cy="25" r="3"/></svg>{{ block.settings.shipping | escape }}</div>
+            <div><svg aria-hidden="true" viewBox="0 0 32 32" fill="none" stroke="currentColor"><rect x="3" y="12" width="26" height="17" rx="3"/><path d="M10 12V8a6 6 0 0 1 12 0v4M3 19h26"/></svg>{{ block.settings.payments | escape }}</div>
+            <div><svg aria-hidden="true" viewBox="0 0 32 32" fill="none" stroke="currentColor"><path d="M5 3h22v26H5zM9 9h14M9 14h14M9 19h14M9 24h8"/></svg>{{ block.settings.education | escape }}</div>
+          </div>
+        {% when 'whatsapp' %}
+          <a class="labsens-product__buy" href="https://wa.me/{{ section.settings.phone | remove: '+' | remove: ' ' | escape }}?text={{ whatsapp_message | strip | url_encode }}" {{ block.shopify_attributes }}>{{ block.settings.label | escape }} <svg aria-hidden="true" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m8 4-4 7m12-7 4 7M2 11h20M4 11l2 9h12l2-9M9 13v5m6-5v5"/></svg></a>
+      {% endcase %}
+    {% endfor %}
+  </div>
+</section>
+{% stylesheet %}
+  .labsens-product{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2.05fr);gap:20px;max-width:1360px;margin:0 auto;padding:20px;background:var(--labsens-paper);color:var(--labsens-ink)}
+  .labsens-product__media{padding-bottom:8px;border-bottom:1px solid var(--labsens-ink);align-self:start}
+  .labsens-product__gallery{display:flex;overflow-x:auto;scroll-snap-type:x mandatory;border:1px solid var(--labsens-ink)}
+  .labsens-product__slide{flex:0 0 100%;min-width:0;scroll-snap-align:start}
+  .labsens-product__slide img{width:100%;height:auto;aspect-ratio:0.775;object-fit:cover;display:block}
+  .labsens-product__thumbnails{display:flex;gap:10px;margin-top:10px}
+  .labsens-product__thumbnails a{width:65px;border:1px solid var(--labsens-ink)}
+  .labsens-product__thumbnails img{display:block;width:100%;height:auto}
+  .labsens-product__information{min-width:0}
+  .labsens-product h1{font-family:inherit;font-size:30px;font-weight:700;line-height:1.15;margin:0 0 16px}
+  .labsens-product__price{font-size:18px;font-weight:600;margin:0 0 20px}
+  .labsens-product__description{font-size:16px;margin-bottom:36px}
+  .labsens-product__detail{border-bottom:1px solid var(--labsens-ink)}
+  .labsens-product__detail summary{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:15px 10px;cursor:pointer;font-size:18px;list-style:none}
+  .labsens-product__detail summary::-webkit-details-marker{display:none}
+  .labsens-product__detail summary span{font-size:24px;line-height:1}
+  .labsens-product__detail[open] summary span{transform:rotate(180deg)}
+  .labsens-product__technical{padding:5px 10px 20px;font-size:16px;line-height:1.5;overflow-wrap:anywhere}
+  .labsens-product__technical p{margin:0 0 12px}
+  .labsens-product__technical p:last-child{margin-bottom:0}
+  .labsens-product__benefits{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;margin:20px 0}
+  .labsens-product__benefits>div{background:white;border:1px solid var(--labsens-ink);padding:8px;display:flex;align-items:center;flex-direction:column;gap:5px;text-align:center;font-family:Georgia,serif;font-size:14px}
+  .labsens-product__benefits svg{width:32px;height:32px}
+  .labsens-product a.labsens-product__buy{display:flex;align-items:center;justify-content:center;gap:14px;border:1px solid var(--labsens-ink);border-radius:999px;background:var(--labsens-peach);text-align:center;font-size:18px;font-weight:600;padding:10px 20px;text-decoration:none}
+  .labsens-product__buy:hover{background:var(--labsens-accent)}
+  @media(max-width:749px){.labsens-product{grid-template-columns:minmax(0,1fr);padding:20px;gap:25px}.labsens-product h1{font-size:28px}.labsens-product__benefits{gap:6px}.labsens-product__benefits>div{font-size:12px;padding:8px 4px}}
+{% endstylesheet %}
+{% schema %}
+{
+  "name":"Labsens · Producto",
+  "enabled_on":{"templates":["product"]},
+  "settings":[
+    {"type":"text","id":"phone","label":"WhatsApp con código de país","default":"573202141507"},
+    {"type":"text","id":"message","label":"Mensaje de consulta","default":"Hola, me interesa"},
+    {"type":"text","id":"gallery_label","label":"Etiqueta accesible de galería","default":"Imágenes del producto"},
+    {"type":"text","id":"image_label","label":"Etiqueta accesible de imagen","default":"Ver imagen"}
+  ],
+  "blocks":[
+    {"type":"title","name":"Título nativo","limit":1},
+    {"type":"price","name":"Precio nativo","limit":1},
+    {"type":"description","name":"Descripción nativa","limit":1},
+    {"type":"technical","name":"Información técnica","settings":[
+      {"type":"text","id":"heading","label":"Título","default":"Propiedades"},
+      {"type":"select","id":"content","label":"Información del producto","options":[{"value":"properties","label":"Propiedades"},{"value":"recommendations","label":"Recomendaciones"},{"value":"usage","label":"Modos de uso"},{"value":"notes","label":"Notas olfativas"}],"default":"properties"},
+      {"type":"checkbox","id":"open","label":"Abierto inicialmente","default":false}
+    ]},
+    {"type":"benefits","name":"Beneficios","limit":1,"settings":[
+      {"type":"text","id":"shipping","label":"Envíos","default":"Envíos nacionales"},
+      {"type":"text","id":"payments","label":"Pagos","default":"Pagos seguros"},
+      {"type":"text","id":"education","label":"Educación","default":"Material educativo"}
+    ]},
+    {"type":"whatsapp","name":"Compra por WhatsApp","limit":1,"settings":[{"type":"text","id":"label","label":"Texto del botón","default":"Comprar por Whatsapp"}]}
+  ],
+  "presets":[{"name":"Labsens · Producto","blocks":[{"type":"title"},{"type":"price"},{"type":"description"},{"type":"technical","settings":{"heading":"Propiedades","content":"properties"}},{"type":"technical","settings":{"heading":"Recomendaciones","content":"recommendations"}},{"type":"technical","settings":{"heading":"Modos de uso","content":"usage"}},{"type":"technical","settings":{"heading":"Notas olfativas","content":"notes"}},{"type":"benefits"},{"type":"whatsapp"}]}]
+}
+{% endschema %}
