@@ -1,0 +1,30 @@
+.labsens-page-heading{background:var(--labsens-peach);padding:20px 10px;border-bottom:1px solid var(--labsens-ink);text-align:center}
+.labsens-page-heading h1{font-size:30px;line-height:30px;font-weight:700;margin:0;letter-spacing:normal}
+.labsens-contact{display:grid;grid-template-columns:1fr 1fr}
+.labsens-contact__image img{width:100%;height:100%;object-fit:cover;display:block}
+.labsens-contact__content{padding:50px}
+.labsens-contact h2{font-size:30px;line-height:30px;margin:0 0 20px;font-weight:700}
+.labsens-contact__content>p{margin:0 0 30px;line-height:24px}
+.labsens-contact__fields{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.labsens-contact__wide{grid-column:1/-1}
+.labsens-contact label{display:block;font-size:16px;line-height:16px}
+.labsens-contact label span{color:#d14836}
+.labsens-contact input,.labsens-contact textarea{display:block;width:100%;background:white;border:1px solid #69727d;border-radius:24px;padding:9px 14px;font:inherit;font-size:15px;line-height:21px;box-sizing:border-box;color:var(--labsens-ink)}
+.labsens-contact input{height:40px}.labsens-contact textarea{height:96px;resize:vertical;border-radius:20px}
+.labsens-contact button{height:40px;background:var(--labsens-accent);border:1px solid var(--labsens-ink);border-radius:24px;font:inherit;font-size:18px;font-weight:600;cursor:pointer}
+.labsens-contact__details{margin-top:20px;font-size:16px;line-height:24px}
+.labsens-contact__details p{margin:0 0 10px}
+.labsens-contact__socials{display:flex;gap:14px;margin-top:20px}.labsens-contact__socials svg{width:24px;height:24px;fill:currentColor}
+.labsens-learn-intro{max-width:720px;margin:40px auto 30px;text-align:center;line-height:24px;padding:0 10px}.labsens-learn-intro p{margin:0}
+.labsens-learn{display:block;padding-bottom:30px}
+.labsens-learn fieldset{border:0;display:flex;justify-content:center;flex-wrap:wrap;gap:10px;padding:0 10px;margin:0 0 20px}.labsens-learn fieldset[hidden]{display:none}
+.labsens-learn label{display:flex;align-items:center;gap:5px;font-weight:600;cursor:pointer}.labsens-learn input{appearance:auto;width:16px;height:16px;accent-color:var(--labsens-ink)}
+.labsens-learn .labsens-home-resources{margin:0;padding:0 10px}.labsens-learn .labsens-home-resources__grid{margin:0}
+.labsens-learn article[hidden]{display:none}.labsens-learn h2{font-size:21px;line-height:25.2px;font-weight:700;margin:0 0 25px;text-align:left;letter-spacing:normal}
+@media(max-width:767px){.labsens-contact{grid-template-columns:1fr}.labsens-contact__image{height:140px}.labsens-contact__content{padding:20px}.labsens-contact__fields{grid-template-columns:1fr}.labsens-contact__content>p{margin-bottom:35px}.labsens-learn-intro{margin:30px auto}.labsens-learn fieldset{justify-content:flex-start}}
+.labsens-document{max-width:var(--document-width,1140px);margin:0 auto;padding:10px 10px 40px;overflow-wrap:anywhere}
+.labsens-document h1{font-size:50px;line-height:1;font-weight:700;margin:0 0 20px;letter-spacing:normal}
+.labsens-document__body{font-size:16px;line-height:1.5}
+.labsens-document__body p{margin:0 0 20px}.labsens-document__body ul,.labsens-document__body ol{padding-left:30px;margin:0 0 20px;list-style:revert}.labsens-document__body li{margin-bottom:5px}
+.labsens-document__body h2,.labsens-document__body h3{font-size:30px;line-height:1;margin:30px 0 20px}.labsens-document__body a{text-decoration:underline}.labsens-document__body img{max-width:100%;height:auto}
+@media(max-width:767px){.labsens-document{padding:30px 20px 40px}.labsens-document h1{font-size:26px;margin-bottom:30px}}

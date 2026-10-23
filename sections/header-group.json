@@ -14,7 +14,7 @@
     "labsens_header": {
       "type": "labsens-header",
       "settings": {
-        "contact_url": "https://labsens.co/contacto/"
+        "contact_url": "/pages/contact"
       },
       "blocks": {
         "link_0": {

@@ -1,0 +1,20 @@
+{{ 'labsens-pages.css' | asset_url | stylesheet_tag }}
+<div class="labsens-page-heading labsens-global"><h1>{{ section.settings.heading | default: page.title | escape }}</h1></div>
+{% schema %}
+{
+  "name": "Labsens · Título",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Título"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Labsens · Título"
+    }
+  ]
+}
+{% endschema %}

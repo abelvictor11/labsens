@@ -1,0 +1,60 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "title": {
+      "type": "labsens-page-heading",
+      "settings": {
+        "heading": "Contacto"
+      }
+    },
+    "contact": {
+      "type": "labsens-contact",
+      "settings": {
+        "details": "<p>Cra 50 # 79 SUR 101 Stock Sur Bodega 108 - La Estrella - Antioquia - Colombia</p><p>6044487792 / 3216584433</p><p><a href=\"https://wa.me/573202141507\">3202141507</a></p><p><a href=\"mailto:comunicaciones@cijyj.com\">comunicaciones@cijyj.com</a></p>"
+      },
+      "blocks": {
+        "instagram": {
+          "type": "social",
+          "settings": {
+            "label": "Instagram",
+            "icon": "instagram",
+            "url": "https://www.instagram.com/labsens.co/"
+          }
+        },
+        "youtube": {
+          "type": "social",
+          "settings": {
+            "label": "Youtube",
+            "icon": "youtube",
+            "url": "https://www.youtube.com/channel/UCn3JoUrQBD4lVF2fLIfUhYw/videos"
+          }
+        },
+        "facebook": {
+          "type": "social",
+          "settings": {
+            "label": "Facebook",
+            "icon": "facebook",
+            "url": "https://www.facebook.com/Labsens.cijyj/"
+          }
+        }
+      },
+      "block_order": [
+        "instagram",
+        "youtube",
+        "facebook"
+      ]
+    }
+  },
+  "order": [
+    "title",
+    "contact"
+  ]
+}
