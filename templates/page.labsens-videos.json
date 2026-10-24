@@ -1,0 +1,71 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "title": {
+      "type": "labsens-page-heading",
+      "settings": {
+        "heading": "Video tutoriales"
+      }
+    },
+    "videos": {
+      "type": "labsens-video-library",
+      "blocks": {
+        "video0": {
+          "type": "video",
+          "settings": {
+            "video": "https://www.youtube.com/watch?v=ZMiBLs-y5Kw",
+            "title": "El aroma te lleva donde el verano nunca se va"
+          }
+        },
+        "video1": {
+          "type": "video",
+          "settings": {
+            "video": "https://www.youtube.com/watch?v=8YW-8Z9_pyo",
+            "title": "La Magia de la Navidad"
+          }
+        },
+        "video2": {
+          "type": "video",
+          "settings": {
+            "video": "https://www.youtube.com/watch?v=IH139nUy1Yw",
+            "title": "Formulación con el aditivo weissen, el aditivo que llegó para quedarse."
+          }
+        },
+        "video3": {
+          "type": "video",
+          "settings": {
+            "video": "https://www.youtube.com/watch?v=dRKI3v5QUHI",
+            "title": "El Weissen, tu mejor aliado para tus velas de molde"
+          }
+        },
+        "video4": {
+          "type": "video",
+          "settings": {
+            "video": "https://www.youtube.com/watch?v=bHrgdzU1wLY",
+            "title": "¿Qué es el weissen? Ven y te contamos"
+          }
+        }
+      },
+      "block_order": [
+        "video0",
+        "video1",
+        "video2",
+        "video3",
+        "video4"
+      ],
+      "settings": {}
+    }
+  },
+  "order": [
+    "title",
+    "videos"
+  ]
+}
