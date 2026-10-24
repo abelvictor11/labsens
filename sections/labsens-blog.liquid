@@ -4,12 +4,13 @@
 {% assign source_blog = section.settings.blog | default: blog %}
 <labsens-learn class="labsens-learn labsens-global">
 <fieldset hidden><legend class="visually-hidden">{{ section.settings.filter_label | escape }}</legend>
-{% for tag in source_blog.all_tags %}{% if tag contains 'Sobre ' %}<label><input type="checkbox" value="{{ tag | escape }}">{{ tag | escape }}</label>{% endif %}{% endfor %}
+{% for tag in source_blog.all_tags %}{% if tag contains 'Sobre ' or tag == 'Uncategorized' %}<label><input type="checkbox" value="{{ tag | escape }}">{{ tag | escape }}</label>{% endif %}{% endfor %}
 </fieldset><p class="visually-hidden" role="status" data-count data-label="{{ section.settings.results_label | escape }}"></p>
 {% paginate source_blog.articles by 50 %}
 <div class="labsens-home-resources"><div class="labsens-home-resources__grid">
-{% for entry in source_blog.articles %}
-{% assign category = '' %}{% for tag in entry.tags %}{% if tag contains 'Sobre ' %}{% assign category = tag %}{% break %}{% endif %}{% endfor %}
+{% assign ordered_articles = source_blog.articles | reverse %}
+{% for entry in ordered_articles %}
+{% assign category = entry.tags.first %}{% for tag in entry.tags %}{% if tag contains 'Sobre ' %}{% assign category = tag %}{% break %}{% endif %}{% endfor %}
 <article data-category="{{ category | escape }}"><a class="labsens-home-resources__image" href="{{ entry.url }}">{% if entry.image %}{{ entry.image | image_url: width: 900 | image_tag: loading: 'lazy', widths: '300,450,600,900', sizes: '(max-width: 767px) 100vw, 33vw' }}{% endif %}<span>{{ category | escape }}</span></a><div class="labsens-home-resources__text"><h2><a href="{{ entry.url }}">{{ entry.title | escape }}</a></h2><a class="labsens-home-resources__more" href="{{ entry.url }}">{{ section.settings.more | escape }}</a></div></article>
 {% endfor %}</div></div>
 {% if paginate.pages > 1 %}<nav class="labsens-blog-pagination" aria-label="{{ section.settings.pagination_label | escape }}">{{ paginate | default_pagination }}</nav>{% endif %}

@@ -1,8 +1,17 @@
 {{ 'labsens-blog.css' | asset_url | stylesheet_tag }}
-<div class="labsens-article-layout labsens-global">
+<div class="labsens-article-layout labsens-global{% unless section.settings.show_related %} labsens-article-layout--full{% endunless %}">
 <div><div class="labsens-article-body">{{ article.content }}</div>
 {% assign recommended = article.metafields.labsens.recommended_products.value %}
 {% if section.settings.show_products and recommended != blank %}<div class="labsens-article-products"><h2>{{ section.settings.products_heading | escape }}</h2><div>{% for item in recommended %}{% if item.published_at != blank %}<a class="labsens-article-product" href="{{ item.url }}">{% if item.featured_image %}{{ item.featured_image | image_url: width: 600 | image_tag: loading: 'lazy' }}{% endif %}<div><small>{{ item.type | escape }}</small><h3>{{ item.title | escape }}</h3><strong>{{ item.price_min | money_without_trailing_zeros }}{% if item.price_varies %} – {{ item.price_max | money_without_trailing_zeros }}{% endif %}</strong></div></a>{% endif %}{% endfor %}</div></div>{% endif %}
+{% if blog.comments_enabled? %}
+<div class="labsens-article-comments">
+{% paginate article.comments by 10 %}
+{% for comment in article.comments %}<div class="labsens-article-comment">{{ comment.content }}<p>{{ comment.author | escape }} · {{ comment.created_at | time_tag: format: 'date' }}</p></div>{% endfor %}
+{{ paginate | default_pagination }}
+{% endpaginate %}
+{% render 'blog-comment-form', article: article, section_id: section.id %}
+</div>
+{% endif %}
 </div>
 {% if section.settings.show_related %}<aside class="labsens-article-related"><h2>{{ section.settings.related_heading | escape }}</h2>{% assign count = 0 %}{% for entry in blog.articles %}{% unless entry.id == article.id %}{% assign related = false %}{% for tag in article.tags %}{% if entry.tags contains tag %}{% assign related = true %}{% endif %}{% endfor %}{% if related %}<a href="{{ entry.url }}"><div><h3>{{ entry.title | escape }}</h3><span>{{ section.settings.more | escape }}</span></div>{% if entry.image %}{{ entry.image | image_url: width: 240 | image_tag: loading: 'lazy' }}{% endif %}</a>{% assign count = count | plus: 1 %}{% if count >= section.settings.related_count %}{% break %}{% endif %}{% endif %}{% endunless %}{% endfor %}
 <div class="labsens-article-cta"><h2>{{ section.settings.cta_heading | escape }}</h2><p>{{ section.settings.cta_text | escape }}</p><a href="{{ section.settings.cta_url }}">{{ section.settings.cta_label | escape }}</a></div></aside>{% endif %}
