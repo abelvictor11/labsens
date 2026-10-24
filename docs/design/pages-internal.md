@@ -15,7 +15,7 @@ Las políticas usan `page.labsens-policy`: cuerpo editable en Contenido > Págin
 
 Textos originales sin reformular condiciones. Comparación del texto completo ignorando espacios contra DOM original para términos, privacidad, eliminación y reclamaciones. Estructura de listas y encabezados preservada. Reclamaciones conserva negritas y listas anidadas. No se corrigieron discrepancias legales del original.
 
-Header y footer enlazan las seis páginas. Los PDF de tratamiento de datos de clientes y proveedores conservan sus enlaces originales; falta alojarlos en Archivos de Shopify antes de retirar WordPress. Aprende/blog permanece pendiente como trabajo separado.
+Header y footer enlazan las seis páginas. Los PDF de tratamiento de datos de clientes y proveedores están alojados en Archivos de Shopify y enlazados desde el footer. Aprende/blog migrado: ver `blog.md`.
 
 ## Verificación
 

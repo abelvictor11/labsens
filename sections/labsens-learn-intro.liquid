@@ -1,0 +1,20 @@
+{{ 'labsens-pages.css' | asset_url | stylesheet_tag }}
+<div class="labsens-learn-intro labsens-global">{{ section.settings.text }}</div>
+{% schema %}
+{
+  "name": "Labsens · Introducción",
+  "tag": "section",
+  "settings": [
+    {
+      "type": "richtext",
+      "id": "text",
+      "label": "Texto"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Labsens · Introducción"
+    }
+  ]
+}
+{% endschema %}

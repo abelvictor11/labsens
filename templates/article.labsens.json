@@ -1,0 +1,16 @@
+{
+  "sections": {
+    "hero": {
+      "type": "labsens-article-hero",
+      "settings": {}
+    },
+    "body": {
+      "type": "labsens-article-body",
+      "settings": {}
+    }
+  },
+  "order": [
+    "hero",
+    "body"
+  ]
+}

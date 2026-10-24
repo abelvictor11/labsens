@@ -33,14 +33,14 @@
           "type": "column",
           "settings": {
             "heading": "Nosotros",
-            "links": "<p><a href=\"https://labsens.co/aprende/\">Tips, guías y consejos</a></p><p><a href=\"/pages/contact\">Contacto</a></p>"
+            "links": "<p><a href=\"/blogs/aprende\">Tips, guías y consejos</a></p><p><a href=\"/pages/contact\">Contacto</a></p>"
           }
         },
         "column_2": {
           "type": "column",
           "settings": {
             "heading": "Legales",
-            "links": "<p><a href=\"/pages/politicas-de-calidad\">Políticas de calidad</a></p><p><a href=\"/pages/politica-de-reclamaciones-y-reposicion-de-producto\">Política de reclamaciones</a></p><p><a href=\"https://labsens.co/wp-content/uploads/2025/07/TRATAMIENTOS-DE-DATOS-PERSONALES-PROVEEDORES.pdf\">Tratamiento de datos – Proveedores</a></p><p><a href=\"https://labsens.co/wp-content/uploads/2025/07/POLITICA-DE-TRATAMIENTO-DE-DATOS-PARA-CLIENTES.pdf\">Tratamiento de datos – Clientes</a></p><p><a href=\"/pages/terminos-y-condiciones\">Términos y Condiciones</a></p><p><a href=\"/pages/politica-de-privacidad\">Política de Privacidad</a></p><p><a href=\"/pages/politica-de-eliminacion-de-datos\">Política de Eliminación de Datos</a></p>"
+            "links": "<p><a href=\"/pages/politicas-de-calidad\">Políticas de calidad</a></p><p><a href=\"/pages/politica-de-reclamaciones-y-reposicion-de-producto\">Política de reclamaciones</a></p><p><a href=\"https://cdn.shopify.com/s/files/1/0844/9979/2121/files/labsens-tratamiento-datos-proveedores.pdf?v=1792717652\">Tratamiento de datos – Proveedores</a></p><p><a href=\"https://cdn.shopify.com/s/files/1/0844/9979/2121/files/labsens-tratamiento-datos-clientes.pdf?v=1792717652\">Tratamiento de datos – Clientes</a></p><p><a href=\"/pages/terminos-y-condiciones\">Términos y Condiciones</a></p><p><a href=\"/pages/politica-de-privacidad\">Política de Privacidad</a></p><p><a href=\"/pages/politica-de-eliminacion-de-datos\">Política de Eliminación de Datos</a></p>"
           }
         }
       },

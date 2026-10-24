@@ -1,0 +1,27 @@
+{
+  "sections": {
+    "title": {
+      "type": "labsens-page-heading",
+      "settings": {
+        "heading": "Tips, guías y consejos"
+      }
+    },
+    "intro": {
+      "type": "labsens-learn-intro",
+      "settings": {
+        "text": "<p>Encuentra tips, consejos y guías para aprender a usar las ceras, parafinas, fragancias y colorantes para fabricar tus velas y crear verdaderas experiencias sensoriales</p>"
+      }
+    },
+    "library": {
+      "type": "labsens-blog",
+      "settings": {
+        "blog": "aprende"
+      }
+    }
+  },
+  "order": [
+    "title",
+    "intro",
+    "library"
+  ]
+}

@@ -1,0 +1,10 @@
+{{ 'labsens-blog.css' | asset_url | stylesheet_tag }}
+<div class="labsens-article-hero labsens-global">
+<div class="labsens-article-hero__text"><h1>{{ article.title | escape }}</h1>
+{% if section.settings.show_tags %}<div class="labsens-article-hero__tags">{% for tag in article.tags %}<a href="{{ blog.url }}/tagged/{{ tag | handleize }}">{{ tag | escape }}</a>{% endfor %}</div>{% endif %}
+{% if section.settings.show_share %}{% assign share_url = canonical_url | url_encode %}<nav class="labsens-article-share" aria-label="{{ section.settings.share_label | escape }}"><a href="https://www.facebook.com/sharer/sharer.php?u={{ share_url }}" aria-label="Facebook">f</a><a href="https://twitter.com/intent/tweet?url={{ share_url }}" aria-label="X">X</a><a href="https://wa.me/?text={{ share_url }}" aria-label="WhatsApp">{{ 'labsens-whatsapp.svg' | inline_asset_content }}</a></nav>{% endif %}
+</div>{% if article.image %}<div class="labsens-article-hero__image">{{ article.image | image_url: width: 1400 | image_tag: loading: 'eager', widths: '400,700,1000,1400', sizes: '(max-width: 767px) 100vw, 40vw' }}</div>{% endif %}
+</div>
+{% schema %}
+{"name":"Labsens · Hero artículo","tag":"section","settings":[{"type":"checkbox","id":"show_tags","label":"Mostrar categorías y etiquetas","default":true},{"type":"checkbox","id":"show_share","label":"Mostrar enlaces para compartir","default":true},{"type":"text","id":"share_label","label":"Etiqueta compartir","default":"Compartir artículo"}],"presets":[{"name":"Labsens · Hero artículo"}]}
+{% endschema %}
