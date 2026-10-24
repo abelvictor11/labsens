@@ -81,9 +81,9 @@
           "type": "link",
           "settings": {
             "label": "Aprende",
-            "url": "https://labsens.co/aprende/",
+            "url": "/blogs/aprende",
             "child_label_1": "Guías, consejos e inspiración",
-            "child_url_1": "https://labsens.co/aprende/",
+            "child_url_1": "/blogs/aprende",
             "child_label_2": "Video tutoriales",
             "child_url_2": "https://labsens.co/video-tutoriales/"
           }

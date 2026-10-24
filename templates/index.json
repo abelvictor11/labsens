@@ -199,7 +199,7 @@
             "alt": "Colorantes",
             "title": "Colorantes",
             "category": "Sobre colorantes",
-            "url": "https://labsens.co/colorantes/"
+            "url": "/blogs/aprende/colorantes"
           }
         },
         "1": {
@@ -209,7 +209,7 @@
             "alt": "Weissen",
             "title": "Weissen",
             "category": "Uncategorized",
-            "url": "https://labsens.co/weissen/"
+            "url": "/blogs/aprende/weissen"
           }
         },
         "2": {
@@ -219,7 +219,7 @@
             "alt": "Cera de palma",
             "title": "Cera de palma",
             "category": "Sobre ceras",
-            "url": "https://labsens.co/cera-de-palma/"
+            "url": "/blogs/aprende/cera-de-palma"
           }
         }
       },

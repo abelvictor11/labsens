@@ -1,0 +1,34 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "title": {
+      "type": "labsens-page-heading",
+      "settings": {
+        "heading": "Tips, guías y consejos"
+      }
+    },
+    "intro": {
+      "type": "labsens-learn-intro",
+      "settings": {
+        "text": "<p>Encuentra tips, consejos y guías para aprender a usar las ceras, parafinas, fragancias y colorantes para fabricar tus velas y crear verdaderas experiencias sensoriales</p>"
+      }
+    },
+    "library": {
+      "type": "labsens-blog",
+      "settings": {}
+    }
+  },
+  "order": [
+    "title",
+    "intro",
+    "library"
+  ]
+}
