@@ -21,4 +21,4 @@ Tabla de pabilos y PDF legales alojados en Archivos de Shopify. Export XML y res
 
 ## Antes del cambio de dominio
 
-Importar y verificar `docs/migration/blog-redirects.csv` (preparado, no aplicado). Revisar redirecciones de categorías antiguas en la auditoría SEO global. El enlace de video-tutoriales aún apunta a WordPress y requiere su migración separada. El listado conserva el orden original de los 18 artículos invirtiendo la página nativa de hasta 50 entradas; revisar estrategia de orden y filtros si el blog supera 50.
+Importar y verificar `docs/migration/blog-redirects.csv` (preparado, no aplicado). Revisar redirecciones de categorías antiguas en la auditoría SEO global. Video-tutoriales migrado a `/pages/video-tutoriales`; ver `videos.md`. El listado conserva el orden original de los 18 artículos invirtiendo la página nativa de hasta 50 entradas; revisar estrategia de orden y filtros si el blog supera 50.
